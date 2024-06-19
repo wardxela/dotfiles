@@ -5,7 +5,8 @@
 //    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
 //                 |___/                   
 //  
-// by Stephan Raabe (2023) 
+// built by Stephan Raabe (2023) 
+// forked by wardxela (2024)
 // ----------------------------------------------------- 
 //
 {
@@ -20,22 +21,18 @@
     // Load Modules
     "include": ["~/dotfiles/waybar/modules.jsonc"],
 
-    // Modules Left
     "modules-left": [
         "custom/appmenu",
         "custom/settings",
-        //"wlr/taskbar",
         "group/quicklinks",
         "hyprland/window",
         "custom/empty"
     ],
 
-    // Modules Center
     "modules-center": [
         "hyprland/workspaces"
     ],
 
-    // Modules Right    
     "modules-right": [
         // "custom/updates",
         "pulseaudio",
