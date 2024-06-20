@@ -36,10 +36,8 @@
 }
 
 window#waybar {
-    background-color: rgba(255,255,255,0.1);
     border-bottom: 0;
-    transition-property: background-color;
-    transition-duration: .5s;
+    background: none;
 }
 
 /* -----------------------------------------------------
@@ -157,17 +155,10 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
  * Custom Quicklinks
  * ----------------------------------------------------- */
-
-#custom-brave, 
+#custom-appmenu,
 #custom-browser, 
-#custom-keybindings, 
-#custom-outlook, 
 #custom-filemanager, 
-#custom-teams, 
 #custom-chatgpt, 
-#custom-calculator, 
-#custom-windowsvm, 
-#custom-cliphist, 
 #custom-wallpaper, 
 #custom-settings, 
 #custom-wallpaper, 
@@ -210,30 +201,6 @@ window#waybar.empty #window {
     margin-right:20px;
 }
 
-#custom-ml4w-welcome {
-    margin-right: 12px;
-    background-image: url("../assets/ml4w-icon.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-right: 24px;
-}
-
-#custom-ml4w-hyprland-settings {
-    margin-right: 12px;
-    background-image: url("../assets/hyprland-icon.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-right: 16px;
-}
-
-#custom-chatgpt {
-    margin-right: 12px;
-    background-image: url("../assets/ai-icon-20.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-right: 24px;
-}
-
 /* -----------------------------------------------------
  * Idle Inhibator
  * ----------------------------------------------------- */
@@ -259,14 +226,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-appmenu {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 0px 10px 0px 10px;
-    margin: 8px 14px 8px 14px;
-    opacity:0.8;
-    border:3px solid @bordercolor;
+    margin-left: 15px;
 }
 
 /* -----------------------------------------------------
@@ -326,9 +286,9 @@ window#waybar.empty #window {
  * Hardware Group
  * ----------------------------------------------------- */
 
- #disk,#memory,#cpu,#language {
+#disk,#memory,#cpu,#language {
     margin:0px;
-    padding:0px;
+    padding-top: 2px;
     font-size:16px;
     color:@iconcolor;
 }
