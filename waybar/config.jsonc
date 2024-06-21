@@ -27,11 +27,10 @@
 
   "modules-right": [
     // "custom/updates",
-    "pulseaudio",
-    "bluetooth",
     "group/hardware",
     "tray",
     "custom/exit",
+    "pulseaudio",
     "network",
     "clock"
   ]
