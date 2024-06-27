@@ -6,7 +6,10 @@ return {
       require "configs.conform"
     end,
   },
-
+  {
+    "andweeb/presence.nvim",
+    event = "VeryLazy",
+ }
   -- These are some examples, uncomment them if you want to see them work!
   -- {
   --   "neovim/nvim-lspconfig",
