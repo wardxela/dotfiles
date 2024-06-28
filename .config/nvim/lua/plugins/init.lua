@@ -7,9 +7,14 @@ return {
     end,
   },
   {
-    "andweeb/presence.nvim",
+    "IogaMaster/neocord",
     event = "VeryLazy",
- }
+    config = function()
+      require("neocord").setup({
+        main_image = "logo"
+      })
+    end,
+  },
   -- These are some examples, uncomment them if you want to see them work!
   -- {
   --   "neovim/nvim-lspconfig",
