@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-	theme = "onenord",
+	theme = "github_dark",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },

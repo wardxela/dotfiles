@@ -1,6 +1,18 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 
+-- local autocmd = vim.api.nvim_create_autocmd
+
+-- autocmd("VimEnter", {
+--   callback = function()
+--     vim.cmd("!cat /home/wardxela/.config/foot/nvim-theme.txt")
+--   end,
+-- })
+
+-- autocmd("VimLeavePre", {
+--   command = ":silent cat ~/.cache/ags/user/generated/terminal/sequences.txt",
+-- })
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
