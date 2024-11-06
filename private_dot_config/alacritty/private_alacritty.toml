@@ -1,0 +1,13 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/tokyo_night.toml"
+]
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[window]
+option_as_alt = "Both"
+startup_mode = "Maximized"
+opacity = 0.9
+blur = true
