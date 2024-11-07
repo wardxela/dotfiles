@@ -20,10 +20,11 @@
           pkgs.zoxide
           pkgs.fish
           pkgs.fastfetch
+          pkgs.bun
           pkgs.neovim
 	        pkgs.alacritty
           pkgs.vscode
-          pkgs.bun
+          pkgs.discord
         ];
 
       fonts.packages = [
@@ -33,6 +34,15 @@
       system.defaults = {
         dock.autohide = true;
         dock.mru-spaces = false;
+        dock.persistent-apps = [
+          "/Applications/Arc.app"
+          "/Applications/Spotify.app"
+          "/Applications/Obsidian.app"
+          "/Applications/ChatGPT.app"
+          "${pkgs.alacritty}/Applications/Alacritty.app"
+          "${pkgs.vscode}/Applications/Visual Studio Code.app"
+          "${pkgs.discord}/Applications/Discord.app"
+        ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
       };

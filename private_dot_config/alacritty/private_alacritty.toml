@@ -11,3 +11,7 @@ option_as_alt = "Both"
 startup_mode = "Maximized"
 opacity = 0.9
 blur = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
