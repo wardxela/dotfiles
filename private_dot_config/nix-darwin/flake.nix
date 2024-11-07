@@ -18,6 +18,7 @@
         [
           pkgs.chezmoi
           pkgs.zoxide
+          pkgs.eza
           pkgs.fish
           pkgs.fastfetch
           pkgs.bun
