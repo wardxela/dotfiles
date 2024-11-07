@@ -3,10 +3,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 if status is-interactive
   # Commands to run in interactive sessions can go here
   set -gx EDITOR nvim
-end
 
-# zoxide
-zoxide init fish | source
+  # zoxide
+  zoxide init fish | source
+end
 
 # pnpm
 set -gx PNPM_HOME "/Users/wardxela/Library/pnpm"
