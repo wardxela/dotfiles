@@ -10,8 +10,6 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
   let
     configuration = { pkgs, config, ... }: {
-      nixpkgs.config.allowUnfree = true;
-
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
@@ -23,9 +21,6 @@
           pkgs.fastfetch
           pkgs.bun
           pkgs.neovim
-	        pkgs.alacritty
-          pkgs.vscode
-          pkgs.discord
         ];
 
       fonts.packages = [
@@ -40,9 +35,9 @@
           "/Applications/Spotify.app"
           "/Applications/Obsidian.app"
           "/Applications/ChatGPT.app"
-          "${pkgs.alacritty}/Applications/Alacritty.app"
-          "${pkgs.vscode}/Applications/Visual Studio Code.app"
-          "${pkgs.discord}/Applications/Discord.app"
+          "/Applications/Alacritty.app"
+          "/Applications/Visual Studio Code.app"
+          "/Applications/Discord.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
