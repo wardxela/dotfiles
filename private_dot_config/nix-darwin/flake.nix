@@ -33,10 +33,8 @@
         dock.persistent-apps = [
           "/Applications/Arc.app"
           "/Applications/Spotify.app"
-          "/Applications/Obsidian.app"
-          "/Applications/ChatGPT.app"
-          "/Applications/Alacritty.app"
           "/Applications/Visual Studio Code.app"
+          "/Applications/Zed.app"
           "/Applications/Discord.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
