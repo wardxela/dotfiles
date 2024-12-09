@@ -32,10 +32,11 @@
         dock.mru-spaces = false;
         dock.persistent-apps = [
           "/Applications/Arc.app"
+          "/Applications/Discord.app"
           "/Applications/Spotify.app"
           "/Applications/Visual Studio Code.app"
           "/Applications/Zed.app"
-          "/Applications/Discord.app"
+          "/Applications/ChatGPT.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
