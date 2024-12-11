@@ -21,6 +21,7 @@
           pkgs.fastfetch
           pkgs.bun
           pkgs.neovim
+          pkgs.gitui
         ];
 
       fonts.packages = [
