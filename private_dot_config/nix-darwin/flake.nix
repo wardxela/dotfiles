@@ -35,6 +35,7 @@
           "/Applications/Arc.app"
           "/Applications/Discord.app"
           "/Applications/Spotify.app"
+          "/Applications/Яндекс Музыка.app"
           "/Applications/Visual Studio Code.app"
           "/Applications/Zed.app"
           "/Applications/ChatGPT.app"
