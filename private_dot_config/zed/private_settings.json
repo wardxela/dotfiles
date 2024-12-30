@@ -7,12 +7,12 @@
     "version": "2"
   },
   "ui_font_size": 16,
-  "buffer_font_size": 12,
+  "buffer_font_size": 14,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "GitHub Dark Default"
+    "dark": "Github Dark"
   },
   "project_panel": {
     "dock": "right",

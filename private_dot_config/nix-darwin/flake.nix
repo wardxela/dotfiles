@@ -34,8 +34,7 @@
         dock.persistent-apps = [
           "/Applications/Arc.app"
           "/Applications/Discord.app"
-          "/Applications/Spotify.app"
-          "/Applications/Яндекс Музыка.app"
+          "/Applications/Ghostty.app"
           "/Applications/Visual Studio Code.app"
           "/Applications/Zed.app"
           "/Applications/ChatGPT.app"
