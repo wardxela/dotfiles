@@ -32,15 +32,40 @@
         dock.autohide = true;
         dock.mru-spaces = false;
         dock.persistent-apps = [
-          "/Applications/Arc.app"
+          "/Applications/Zen Browser.app"
           "/Applications/Discord.app"
           "/Applications/Ghostty.app"
           "/Applications/Visual Studio Code.app"
           "/Applications/Zed.app"
-          "/Applications/ChatGPT.app"
         ];
+
+        finder._FXSortFoldersFirst = true;
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
+        finder.AppleShowAllFiles = true;
+        finder.CreateDesktop = false;
+        finder.FXDefaultSearchScope = "SCcf";
+        finder.FXRemoveOldTrashItems = true;
+        finder.NewWindowTarget = "Home";
+        finder.QuitMenuItem = true;
+        finder.ShowExternalHardDrivesOnDesktop = false;
+        finder.ShowHardDrivesOnDesktop = false;
+        finder.ShowMountedServersOnDesktop = false;
+        finder.ShowRemovableMediaOnDesktop = false;
+
+        CustomUserPreferences = {
+          "com.apple.symbolichotkeys" = {
+            AppleSymbolicHotKeys = {
+              "64" = {
+                enabled = false;
+                value = {
+                  parameters = [];
+                  type = "standard";
+                };
+              };
+            };
+          };
+        };
       };
 
       # Auto upgrade nix package and the daemon service.
