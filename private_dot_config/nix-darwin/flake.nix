@@ -33,10 +33,9 @@
         dock.mru-spaces = false;
         dock.persistent-apps = [
           "/Applications/Zen Browser.app"
-          "/Applications/Discord.app"
-          "/Applications/Ghostty.app"
-          "/Applications/Visual Studio Code.app"
           "/Applications/Zed.app"
+          "/Applications/Ghostty.app"
+          "/Applications/Discord.app"
         ];
 
         finder._FXSortFoldersFirst = true;
