@@ -18,7 +18,6 @@
   "features": {
     "inline_completion_provider": "supermaven"
   },
-  "show_inline_completions": false,
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
