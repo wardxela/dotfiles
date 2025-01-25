@@ -35,7 +35,7 @@
           "/Applications/Zen Browser.app"
           "/Applications/Zed.app"
           "/Applications/Ghostty.app"
-          "/Applications/Discord.app"
+          "/Applications/Legcord.app"
         ];
 
         finder._FXSortFoldersFirst = true;
