@@ -22,6 +22,7 @@
           pkgs.bun
           pkgs.neovim
           pkgs.gitui
+          pkgs.ripgrep
         ];
 
       fonts.packages = [
