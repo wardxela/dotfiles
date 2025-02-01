@@ -14,15 +14,16 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [
+          pkgs.fastfetch
           pkgs.chezmoi
           pkgs.zoxide
           pkgs.eza
+          pkgs.ripgrep
           pkgs.fish
-          pkgs.fastfetch
           pkgs.bun
           pkgs.neovim
           pkgs.gitui
-          pkgs.ripgrep
+          pkgs.glab
         ];
 
       fonts.packages = [
