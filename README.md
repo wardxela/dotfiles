@@ -11,3 +11,4 @@ Forked and heavily inspired by https://github.com/end-4/dots-hyprland.
 - [ ] Easy to use installation script
 - [ ] Easy to use update script
 - [ ] User-level customization - allow users to adjust things without breaking the system (similar to hyprland custom folder config)
+- [ ] Credentials management

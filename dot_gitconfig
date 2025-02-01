@@ -1,0 +1,14 @@
+[user]
+	name = wardxela
+	email = wardxela@gmail.com
+
+[core]
+	editor = nvim
+
+[init]
+	defaultBranch = main
+
+[push]
+  autoSetupRemote = true 
+  default = current
+
