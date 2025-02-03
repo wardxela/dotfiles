@@ -38,6 +38,7 @@
           "/Applications/Zed.app"
           "/Applications/Ghostty.app"
           "/Applications/Legcord.app"
+          "/Applications/ChatGPT.app"
         ];
 
         finder._FXSortFoldersFirst = true;
