@@ -1,7 +1,8 @@
 {
+  "icon_theme": "Material Icon Theme",
   "vim_mode": true,
   "relative_line_numbers": true,
-  "buffer_font_size": 12,
+  "buffer_font_size": 12.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": {
     "calt": false
@@ -9,7 +10,10 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Github Dark Colorblind"
+    "dark": "Github Dark Tritanopia"
+  },
+  "tabs": {
+    "file_icons": true
   },
   "project_panel": {
     "dock": "right",
@@ -20,8 +24,8 @@
   },
   "assistant": {
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-chat"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
