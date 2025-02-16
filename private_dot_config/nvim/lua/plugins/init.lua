@@ -38,6 +38,13 @@ return {
     end,
     lazy = false,
   },
+  {
+    "thePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
+    -- config = function()
+    --   require("VimBeGood").setup {}
+    -- end,
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
