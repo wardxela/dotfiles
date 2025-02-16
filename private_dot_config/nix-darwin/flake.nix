@@ -24,6 +24,7 @@
           pkgs.neovim
           pkgs.gitui
           pkgs.glab
+          pkgs.rustup
         ];
 
       fonts.packages = [
