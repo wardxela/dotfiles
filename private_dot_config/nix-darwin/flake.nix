@@ -21,11 +21,11 @@
           pkgs.eza
           pkgs.yazi
           pkgs.fzf
-          pkgs.ripgrep
           pkgs.bat
-          pkgs.neovim
           pkgs.gitui
           pkgs.glab
+          pkgs.docker
+          pkgs.lazydocker
           pkgs.bun
           pkgs.rustup
         ];
