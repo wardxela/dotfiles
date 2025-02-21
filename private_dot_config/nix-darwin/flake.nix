@@ -12,8 +12,7 @@
     configuration = { pkgs, config, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [
+      environment.systemPackages = [
           pkgs.fish
           pkgs.chezmoi
           pkgs.fastfetch
@@ -24,6 +23,7 @@
           pkgs.bat
           pkgs.gitui
           pkgs.glab
+          pkgs.colima
           pkgs.docker
           pkgs.lazydocker
           pkgs.bun
@@ -74,7 +74,6 @@
         };
       };
 
-      # Auto upgrade nix package and the daemon service.
       # services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
 
