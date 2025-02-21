@@ -7,4 +7,3 @@ if status is-interactive
   # zoxide
   zoxide init fish | source
 end
-

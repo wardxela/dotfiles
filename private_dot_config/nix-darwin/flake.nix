@@ -14,16 +14,19 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [
-          pkgs.fastfetch
+          pkgs.fish
           pkgs.chezmoi
+          pkgs.fastfetch
           pkgs.zoxide
           pkgs.eza
+          pkgs.yazi
+          pkgs.fzf
           pkgs.ripgrep
-          pkgs.fish
-          pkgs.bun
+          pkgs.bat
           pkgs.neovim
           pkgs.gitui
           pkgs.glab
+          pkgs.bun
           pkgs.rustup
         ];
 
