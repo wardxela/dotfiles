@@ -11,7 +11,6 @@
         "/Applications/Zed.app"
         "/Applications/Ghostty.app"
         "/Applications/Legcord.app"
-        "/Applications/ChatGPT.app"
       ];
       show-recents = false;
       showhidden = true;
