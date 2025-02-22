@@ -50,19 +50,5 @@
     WindowManager = {
       EnableTiledWindowMargins = false;
     };
-
-    CustomUserPreferences = {
-      "com.apple.symbolichotkeys" = {
-        AppleSymbolicHotKeys = {
-          "64" = {
-            enabled = false;
-            value = {
-              parameters = [ ];
-              type = "standard";
-            };
-          };
-        };
-      };
-    };
   };
 }

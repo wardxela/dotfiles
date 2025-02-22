@@ -40,6 +40,8 @@
         modules = [
           ./programs.nix
           ./system.nix
+          ./hot-keys.nix
+          ./launch-agents.nix
           configuration
         ];
       };
