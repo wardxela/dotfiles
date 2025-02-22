@@ -35,10 +35,20 @@
     "version": "2"
   },
 
-  /* ESLint Settings */
-  "formatter": {
-    "code_actions": {
-      "source.fixAll.eslint": true
+  "languages": {
+    "JavaScript": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "Nix": {
+      "formatter": {
+        "external": {
+          "command": "nixfmt"
+        }
+      }
     }
   },
 
