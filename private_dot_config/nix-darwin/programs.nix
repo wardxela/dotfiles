@@ -22,9 +22,5 @@
     pkgs.nixfmt-rfc-style
   ];
 
-  fonts.packages = [
-    pkgs.nerd-fonts.jetbrains-mono
-  ];
-
   programs.fish.enable = true;
 }

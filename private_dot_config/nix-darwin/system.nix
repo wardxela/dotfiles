@@ -4,6 +4,7 @@
   system.defaults = {
     dock = {
       autohide = true;
+      minimize-to-application = true;
       mru-spaces = false;
       persistent-apps = [
         "/Applications/Zen Browser.app"
@@ -12,6 +13,9 @@
         "/Applications/Legcord.app"
         "/Applications/ChatGPT.app"
       ];
+      show-recents = false;
+      showhidden = true;
+      tilesize = 40;
     };
 
     finder = {
@@ -28,6 +32,23 @@
       ShowHardDrivesOnDesktop = false;
       ShowMountedServersOnDesktop = false;
       ShowRemovableMediaOnDesktop = false;
+    };
+
+    hitoolbox.AppleFnUsageType = "Do Nothing";
+
+    NSGlobalDomain = {
+      _HIHideMenuBar = true;
+      AppleFontSmoothing = 0;
+      AppleInterfaceStyle = "Dark";
+    };
+
+    screencapture = {
+      include-date = true;
+      target = "clipboard";
+    };
+
+    WindowManager = {
+      EnableTiledWindowMargins = false;
     };
 
     CustomUserPreferences = {

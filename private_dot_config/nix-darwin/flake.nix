@@ -15,10 +15,11 @@
     }:
     let
       configuration =
-        { ... }:
+        { pkgs, ... }:
         {
-          # List packages installed in system profile. To search by name, run:
-          # $ nix-env -qaP | grep wget
+          fonts.packages = [
+            pkgs.nerd-fonts.jetbrains-mono
+          ];
 
           nix.settings.experimental-features = "nix-command flakes";
 
