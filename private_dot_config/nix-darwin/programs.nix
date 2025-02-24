@@ -4,6 +4,7 @@
   environment.systemPackages = [
     pkgs.fish
     pkgs.chezmoi
+    pkgs.gopass
     pkgs.fastfetch
     pkgs.zoxide
     pkgs.eza
