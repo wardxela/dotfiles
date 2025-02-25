@@ -2,9 +2,11 @@
 
 {
   environment.systemPackages = [
-    pkgs.fish
-    pkgs.chezmoi
+    pkgs.gnupg
     pkgs.gopass
+    pkgs.gopass-jsonapi
+    pkgs.chezmoi
+    pkgs.fish
     pkgs.fastfetch
     pkgs.zoxide
     pkgs.eza
