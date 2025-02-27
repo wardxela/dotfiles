@@ -1,7 +1,8 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-if status is-interactive
-  zoxide init fish | source
-end
+status is-interactive || exit
 
-set -gx EDITOR zed
+set -x EDITOR zed
+set -g fish_greeting
+
+zoxide init fish | source
