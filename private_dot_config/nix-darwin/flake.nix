@@ -39,6 +39,7 @@
       darwinConfigurations."Tyurinovs-MacBook-Air" = nix-darwin.lib.darwinSystem {
         modules = [
           ./programs.nix
+          ./homebrew.nix
           ./system.nix
           ./hot-keys.nix
           ./launch-agents.nix

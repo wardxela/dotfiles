@@ -16,8 +16,7 @@
     "dark": "Github Dark Tritanopia"
   },
   "tab_bar": {
-    "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_nav_history_buttons": false
   },
   "tabs": {
     "file_icons": true,
@@ -56,30 +55,30 @@
         "code_actions": {
           "source.fixAll.eslint": true
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true
       }
+      // "code_actions_on_format": {
+      //   "source.fixAll.biome": true
+      // }
     },
     "TypeScript": {
       "formatter": {
         "code_actions": {
           "source.fixAll.eslint": true
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true
       }
+      // "code_actions_on_format": {
+      //   "source.fixAll.biome": true
+      // }
     },
     "TSX": {
       "formatter": {
         "code_actions": {
           "source.fixAll.eslint": true
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true
       }
+      // "code_actions_on_format": {
+      //   "source.fixAll.biome": true
+      // }
     },
     "Nix": {
       "formatter": {
