@@ -3,12 +3,11 @@
 	email = wardxela@gmail.com
 
 [core]
-	editor = nvim
+	editor = zed
 
 [init]
 	defaultBranch = main
 
 [push]
-  autoSetupRemote = true 
+  autoSetupRemote = true
   default = current
-
