@@ -40,12 +40,13 @@
     "toml": true,
     "git-firefly": true,
     "github-theme": true,
+    "lua": true,
     "emmet": true,
     "nix": true,
     "biome": true,
     "fish": true,
-    "cspell": true,
-    "colored-zed-icons-theme": true
+    "colored-zed-icons-theme": true,
+    "cspell": true
   },
 
   /* Languages, Formatting, Linting, etc. */

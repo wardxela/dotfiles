@@ -1,2 +1,6 @@
-theme = Github Dark 
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+font-feature = -calt, -liga, -dlig
+theme = Github Dark
 confirm-close-surface = false
+macos-option-as-alt = true
