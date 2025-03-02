@@ -2,5 +2,7 @@ font-family = JetBrainsMono Nerd Font
 font-size = 14
 font-feature = -calt, -liga, -dlig
 theme = Github Dark
+background-opacity = 0.9
+background-blur = true
 confirm-close-surface = false
 macos-option-as-alt = true
