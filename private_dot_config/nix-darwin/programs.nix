@@ -23,6 +23,8 @@
     pkgs.nil
     pkgs.nixd
     pkgs.nixfmt-rfc-style
+    pkgs.yt-dlp
+    pkgs.ffmpeg
   ];
 
   programs.fish.enable = true;

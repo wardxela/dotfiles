@@ -13,7 +13,7 @@
   "theme": {
     "mode": "system",
     "light": "Github Light Tritanopia",
-    "dark": "Catppuccin Espresso (Blur)"
+    "dark": "Github Dark Colorblind"
   },
   "tab_bar": {
     "show_nav_history_buttons": false
@@ -44,41 +44,50 @@
     "emmet": true,
     "nix": true,
     "fish": true,
-    "colored-zed-icons-theme": true,
-    "cspell": true
+    "codebook": true,
+    "colored-zed-icons-theme": true
   },
 
   /* Languages, Formatting, Linting, etc. */
   "languages": {
     "JavaScript": {
       "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
+        "language_server": {
+          "name": "biome"
         }
+        // "code_actions": {
+        //   "source.fixAll.eslint": true
+        // }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true
       }
-      // "code_actions_on_format": {
-      //   "source.fixAll.biome": true
-      // }
     },
     "TypeScript": {
       "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
+        "language_server": {
+          "name": "biome"
         }
+        // "code_actions": {
+        //   "source.fixAll.eslint": true
+        // }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true
       }
-      // "code_actions_on_format": {
-      //   "source.fixAll.biome": true
-      // }
     },
     "TSX": {
       "formatter": {
-        "code_actions": {
-          "source.fixAll.eslint": true
+        "language_server": {
+          "name": "biome"
         }
+        // "code_actions": {
+        //   "source.fixAll.eslint": true
+        // }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true
       }
-      // "code_actions_on_format": {
-      //   "source.fixAll.biome": true
-      // }
     },
     "Nix": {
       "formatter": {
