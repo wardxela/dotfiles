@@ -12,6 +12,7 @@
     pkgs.eza
     pkgs.yazi
     pkgs.fzf
+    pkgs.ripgrep
     pkgs.bat
     pkgs.gitui
     pkgs.glab

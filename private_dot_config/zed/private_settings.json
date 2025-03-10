@@ -1,9 +1,11 @@
 {
   /* Basic */
   "vim_mode": true,
-  "relative_line_numbers": true,
 
   /* UI */
+  "experimental.theme_overrides": {
+    // "background.appearance": "blurred"
+  },
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
   "buffer_font_features": { "calt": false },
@@ -12,7 +14,7 @@
   "icon_theme": "Colored Zed Icons Theme Dark",
   "theme": {
     "mode": "system",
-    "light": "Github Light Tritanopia",
+    "light": "Catppuccin Latte (Blur)",
     "dark": "Github Dark Colorblind"
   },
   "tab_bar": {
@@ -52,12 +54,12 @@
   "languages": {
     "JavaScript": {
       "formatter": {
-        "language_server": {
-          "name": "biome"
-        }
-        // "code_actions": {
-        //   "source.fixAll.eslint": true
+        // "language_server": {
+        //   "name": "biome"
         // }
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
       },
       "code_actions_on_format": {
         "source.fixAll.biome": true
@@ -65,12 +67,12 @@
     },
     "TypeScript": {
       "formatter": {
-        "language_server": {
-          "name": "biome"
-        }
-        // "code_actions": {
-        //   "source.fixAll.eslint": true
+        // "language_server": {
+        //   "name": "biome"
         // }
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
       },
       "code_actions_on_format": {
         "source.fixAll.biome": true
@@ -78,12 +80,12 @@
     },
     "TSX": {
       "formatter": {
-        "language_server": {
-          "name": "biome"
-        }
-        // "code_actions": {
-        //   "source.fixAll.eslint": true
+        // "language_server": {
+        //   "name": "biome"
         // }
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
       },
       "code_actions_on_format": {
         "source.fixAll.biome": true
