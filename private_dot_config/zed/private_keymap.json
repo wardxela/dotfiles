@@ -1,0 +1,9 @@
+[
+  {
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-g": "git_panel::ToggleFocus",
+      "cmd-e": "project_panel::ToggleFocus"
+    }
+  }
+]
