@@ -15,5 +15,9 @@ hs.hotkey.bind({"alt"}, "3", function()
 end)
 
 hs.hotkey.bind({"alt"}, "4", function()
+    hs.application.launchOrFocus("Anytype")
+end)
+
+hs.hotkey.bind({"alt"}, "5", function()
     hs.application.launchOrFocus("Legcord")
 end)

@@ -1,6 +1,7 @@
 {
   /* Basic */
   "vim_mode": true,
+  "confirm_quit": true,
 
   /* UI */
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -31,10 +32,15 @@
     "dock": "right"
   },
   "collaboration_panel": {
-    "dock": "right"
+    "dock": "right",
+    "default_width": 360
   },
   "outline_panel": {
+    "default_width": 360,
     "dock": "right"
+  },
+  "notification_panel": {
+    "default_width": 360
   },
   "terminal": {
     "default_height": 450
@@ -42,12 +48,13 @@
 
   /* Extensions */
   "auto_install_extensions": {
-    "env": true,
-    "docker-compose": true,
+    // "biome": true,
     "codebook": true,
     "colored-zed-icons-theme": true,
+    "docker-compose": true,
     "dockerfile": true,
     "emmet": true,
+    "env": true,
     "fish": true,
     "git-firefly": true,
     "github-theme": true,
@@ -98,6 +105,16 @@
         "source.fixAll.biome": true
       }
     },
+    // "JSON": {
+    //   "formatter": {
+    //     "language_server": {
+    //       "name": "biome"
+    //     }
+    //   },
+    //   "code_actions_on_format": {
+    //     "source.fixAll.biome": true
+    //   }
+    // },
     "Nix": {
       "formatter": {
         "external": {

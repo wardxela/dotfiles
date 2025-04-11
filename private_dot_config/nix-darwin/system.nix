@@ -10,6 +10,7 @@
         "/Applications/Zen Browser.app"
         "/Applications/Zed.app"
         "/Applications/Ghostty.app"
+        "/Applications/Anytype.app"
         "/Applications/Legcord.app"
       ];
       show-recents = false;
