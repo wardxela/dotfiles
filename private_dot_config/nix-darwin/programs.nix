@@ -21,6 +21,8 @@
     pkgs.lazydocker
     pkgs.bun
     pkgs.rustup
+    pkgs.php
+    pkgs.php84Packages.composer
     pkgs.nil
     pkgs.nixd
     pkgs.nixfmt-rfc-style

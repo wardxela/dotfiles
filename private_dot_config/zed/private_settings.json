@@ -48,7 +48,6 @@
 
   /* Extensions */
   "auto_install_extensions": {
-    // "biome": true,
     "codebook": true,
     "colored-zed-icons-theme": true,
     "docker-compose": true,
@@ -61,6 +60,7 @@
     "html": true,
     "lua": true,
     "nix": true,
+    "php": true,
     "toml": true
   },
 
@@ -68,53 +68,25 @@
   "languages": {
     "JavaScript": {
       "formatter": {
-        // "language_server": {
-        //   "name": "biome"
-        // }
         "code_actions": {
           "source.fixAll.eslint": true
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true
       }
     },
     "TypeScript": {
       "formatter": {
-        // "language_server": {
-        //   "name": "biome"
-        // }
         "code_actions": {
           "source.fixAll.eslint": true
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true
       }
     },
     "TSX": {
       "formatter": {
-        // "language_server": {
-        //   "name": "biome"
-        // }
         "code_actions": {
           "source.fixAll.eslint": true
         }
-      },
-      "code_actions_on_format": {
-        "source.fixAll.biome": true
       }
     },
-    // "JSON": {
-    //   "formatter": {
-    //     "language_server": {
-    //       "name": "biome"
-    //     }
-    //   },
-    //   "code_actions_on_format": {
-    //     "source.fixAll.biome": true
-    //   }
-    // },
     "Nix": {
       "formatter": {
         "external": {
