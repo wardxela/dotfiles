@@ -6,6 +6,7 @@
     pkgs.gopass
     pkgs.gopass-jsonapi
     pkgs.chezmoi
+    pkgs.aerospace
     pkgs.fish
     pkgs.fastfetch
     pkgs.zoxide
