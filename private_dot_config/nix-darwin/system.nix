@@ -4,6 +4,7 @@
   system.defaults = {
     dock = {
       autohide = true;
+      expose-group-apps = true;
       minimize-to-application = true;
       mru-spaces = false;
       persistent-apps = [
@@ -48,7 +49,9 @@
       include-date = true;
       target = "clipboard";
     };
-
+    
+    spaces.spans-displays = false;
+    
     WindowManager = {
       EnableTiledWindowMargins = false;
     };
