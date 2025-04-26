@@ -1,9 +1,7 @@
 font-family = JetBrainsMono Nerd Font
-font-size = 14
+font-size = 16
 font-feature = -calt, -liga, -dlig
-# theme = Mathias
-# theme = PaulMillr
-theme = Peppermint
-confirm-close-surface = always
+theme = GitHub-Dark-Default
+confirm-close-surface = false
 macos-option-as-alt = true
 macos-titlebar-style = "tabs"

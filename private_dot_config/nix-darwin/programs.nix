@@ -1,34 +1,46 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = [
-    pkgs.gnupg
-    pkgs.gopass
-    pkgs.gopass-jsonapi
-    pkgs.chezmoi
-    pkgs.aerospace
-    pkgs.fish
-    pkgs.fastfetch
-    pkgs.zoxide
-    pkgs.eza
-    pkgs.yazi
-    pkgs.fzf
-    pkgs.ripgrep
-    pkgs.bat
-    pkgs.gitui
-    pkgs.glab
-    pkgs.colima
-    pkgs.docker
-    pkgs.lazydocker
-    pkgs.bun
-    pkgs.rustup
-    pkgs.php
-    pkgs.php84Packages.composer
-    pkgs.nil
-    pkgs.nixd
-    pkgs.nixfmt-rfc-style
-    pkgs.yt-dlp
-    pkgs.ffmpeg
+  environment.systemPackages = with pkgs; [
+    # GUI
+    aerospace
+
+    # Terminal
+    fish
+    chezmoi
+    fastfetch
+    zoxide
+    eza
+    yazi
+    fzf
+    ripgrep
+    bat
+    helix
+
+    # Privacy
+    gnupg
+    gopass
+    gopass-jsonapi
+
+    # Compilers/Interpreters/Runtimes/etc.
+    bun
+    rustup
+    php
+    php84Packages.composer
+
+    # Development Tools
+    nil
+    nixd
+    nixfmt-rfc-style
+    glab
+    gitui
+    colima
+    docker
+    lazydocker
+
+    # Other
+    yt-dlp
+    ffmpeg
   ];
 
   programs.fish.enable = true;

@@ -27,7 +27,8 @@
       CreateDesktop = false;
       FXDefaultSearchScope = "SCcf";
       FXRemoveOldTrashItems = true;
-      NewWindowTarget = "Home";
+      NewWindowTarget = "Other";
+      NewWindowTargetPath = "file:///Users/wardxela/Downloads";
       QuitMenuItem = true;
       ShowExternalHardDrivesOnDesktop = false;
       ShowHardDrivesOnDesktop = false;
@@ -47,11 +48,12 @@
 
     screencapture = {
       include-date = true;
-      target = "clipboard";
+      target = "file";
+      location = "~/Pictures/Screenshots";
     };
-    
+
     spaces.spans-displays = false;
-    
+
     WindowManager = {
       EnableTiledWindowMargins = false;
     };

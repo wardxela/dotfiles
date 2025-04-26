@@ -1,7 +1,6 @@
 {
   /* Basic */
   "vim_mode": true,
-  "confirm_quit": true,
 
   /* UI */
   "buffer_font_family": "JetBrainsMono Nerd Font",
