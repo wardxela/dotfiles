@@ -4,6 +4,8 @@
 }:
 
 {
+  nixpkgs.config.allowUnfree = true;
+
   fonts.packages = [
     pkgs.nerd-fonts.jetbrains-mono
   ];

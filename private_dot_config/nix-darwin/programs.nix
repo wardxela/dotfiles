@@ -4,6 +4,10 @@
   environment.systemPackages = with pkgs; [
     # GUI
     aerospace
+    qbittorrent
+    spotify
+    google-chrome
+    tor
 
     # Terminal
     fish
@@ -24,6 +28,7 @@
 
     # Compilers/Interpreters/Runtimes/etc.
     bun
+    fnm
     rustup
     php
     php84Packages.composer
