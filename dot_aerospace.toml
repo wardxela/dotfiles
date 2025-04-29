@@ -248,3 +248,7 @@ automatically-unhide-macos-hidden-apps = true
 [[on-window-detected]]
     if.app-id = 'com.image-line.flstudio'
     run = ['move-node-to-workspace M']
+
+[[on-window-detected]]
+    if.app-id = 'io.hoppscotch.desktop'
+    run = ['move-node-to-workspace A']
