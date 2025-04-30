@@ -210,32 +210,28 @@ automatically-unhide-macos-hidden-apps = true
     run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-    if.app-id = 'com.anytype.anytype'
-    run = 'move-node-to-workspace 4'
-
-[[on-window-detected]]
     if.app-id = 'com.logi.ghub'
-    run = ['move-node-to-workspace 5']
+    run = ['move-node-to-workspace Q']
 
 [[on-window-detected]]
     if.app-id = 'com.rogueamoeba.Loopback'
-    run = ['move-node-to-workspace 5']
+    run = ['move-node-to-workspace Q']
 
 [[on-window-detected]]
     if.app-id = 'com.amnezia.AmneziaVPN'
-    run = ['move-node-to-workspace 5']
+    run = ['move-node-to-workspace Q']
 
 [[on-window-detected]]
-    if.app-id = 'org.chromium.Chromium'
-    run = ['move-node-to-workspace 10']
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.finder'
-    run = 'move-node-to-workspace F'
+    if.app-id = 'com.anytype.anytype'
+    run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
     if.app-id = 'com.google.Chrome'
-    run = 'move-node-to-workspace C'
+    run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
+    if.app-id = 'io.hoppscotch.desktop'
+    run = ['move-node-to-workspace A']
 
 [[on-window-detected]]
     if.app-id = 'com.spotify.client'
@@ -246,9 +242,13 @@ automatically-unhide-macos-hidden-apps = true
     run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = 'move-node-to-workspace F'
+
+[[on-window-detected]]
     if.app-id = 'com.image-line.flstudio'
     run = ['move-node-to-workspace M']
 
 [[on-window-detected]]
-    if.app-id = 'io.hoppscotch.desktop'
-    run = ['move-node-to-workspace A']
+    if.app-id = 'org.chromium.Chromium'
+    run = ['move-node-to-workspace 10']

@@ -73,11 +73,12 @@
       in
       {
         enable = true;
-        theme = spicePkgs.themes.catppuccin;
-        colorScheme = "mocha";
+        theme = spicePkgs.themes.lucid;
+        colorScheme = "dark";
         enabledExtensions = with spicePkgs.extensions; [
-          adblock
-          # adblockify
+          adblockify
+          hidePodcasts
+          shuffle
         ];
       };
   };
