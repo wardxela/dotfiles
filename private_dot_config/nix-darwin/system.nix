@@ -70,7 +70,11 @@
 
       WindowManager = {
         EnableTiledWindowMargins = false;
+        EnableTilingByEdgeDrag = false;
+        EnableTilingOptionAccelerator = false;
+        EnableTopTilingByEdgeDrag = false;
       };
     };
   };
+  time.timeZone = "Europe/Moscow";
 }

@@ -20,10 +20,12 @@
         specialArgs = inputs;
         modules = [
           ./system.nix
-          ./hot-keys.nix
-          ./launch-agents.nix
+          ./packages.nix
           ./programs.nix
+          ./services.nix
           ./homebrew.nix
+          ./hot-keys.nix
+          ./launchd.nix
         ];
       };
     };
