@@ -9,6 +9,7 @@
     fish = {
       enable = true;
       interactiveShellInit = ''
+        eval "$(/opt/homebrew/bin/brew shellenv)"
         set -x EDITOR vim
         set -g fish_greeting
         zoxide init fish | source
@@ -32,21 +33,22 @@
         enable = true;
         colorScheme = "custom";
         customColorScheme = {
-          text = "FFFFFF";
-          subtext = "F1F1F1";
-          main = "000000";
-          sidebar = "000000";
-          player = "000000";
-          card = "00010A";
-          shadow = "000000";
-          selected-row = "F1F1F1";
-          button = "545955";
-          button-active = "F1F1F1";
-          button-disabled = "434C5E";
-          tab-active = "000000";
-          notification = "00010A";
-          notification-error = "000000";
-          misc = "00010A";
+          text = "F0F6FC";
+          subtext = "F0F6FC";
+          main = "0D1117";
+          highlight = "656c7633";
+          sidebar = "0D1117";
+          player = "0D1117";
+          card = "010409";
+          shadow = "0D1117";
+          selected-row = "F0F6FC";
+          button = "4493f8";
+          button-active = "F0F6FC";
+          button-disabled = "212830";
+          tab-active = "010409";
+          notification = "010409";
+          notification-error = "010409";
+          misc = "010409";
         };
         enabledExtensions = with spicePkgs.extensions; [
           adblockify
