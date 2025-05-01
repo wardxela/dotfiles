@@ -16,10 +16,12 @@
     zed-editor
     hoppscotch
     google-chrome
-    tor
     qbittorrent
+    raycast
+    katawa-shoujo-re-engineered
 
     # Terminal
+    fishPlugins.tide
     chezmoi
     fastfetch
     zoxide

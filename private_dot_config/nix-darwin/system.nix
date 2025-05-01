@@ -25,7 +25,6 @@
           "/Applications/Zen Browser.app"
           "${pkgs.zed-editor}/Applications/Zed.app"
           "/Applications/Ghostty.app"
-          "/Applications/Anytype.app"
           "/Applications/Legcord.app"
         ];
         show-recents = false;
