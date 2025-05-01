@@ -86,6 +86,7 @@
         alt-shift-y = "move-node-to-workspace Y";
         alt-shift-z = "move-node-to-workspace Z";
 
+        alt-tab = "move-workspace-to-monitor --wrap-around next";
         alt-shift-semicolon = "mode service";
       };
       mode.service.binding = {
@@ -158,12 +159,12 @@
           run = [ "move-node-to-workspace Q" ];
         }
         {
-          "if".app-id = "com.anytype.anytype";
-          run = "move-node-to-workspace W";
-        }
-        {
           "if".app-id = "com.google.Chrome";
           run = "move-node-to-workspace E";
+        }
+        {
+          "if".app-id = "com.apple.iBooksX";
+          run = "move-node-to-workspace R";
         }
         {
           "if".app-id = "io.hoppscotch.desktop";
