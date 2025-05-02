@@ -56,7 +56,6 @@
         AppleFontSmoothing = 0;
         AppleInterfaceStyle = "Dark";
         NSAutomaticWindowAnimationsEnabled = false;
-        NSWindowShouldDragOnGesture = true;
       };
 
       screencapture = {

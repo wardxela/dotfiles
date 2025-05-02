@@ -42,12 +42,12 @@
           card = "010409";
           shadow = "0D1117";
           selected-row = "F0F6FC";
-          button = "4493f8";
+          button = "4493F8";
           button-active = "F0F6FC";
           button-disabled = "212830";
           tab-active = "010409";
-          notification = "010409";
-          notification-error = "010409";
+          notification = "4493F8";
+          notification-error = "F85149";
           misc = "010409";
         };
         enabledExtensions = with spicePkgs.extensions; [
