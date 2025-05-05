@@ -5,3 +5,4 @@ theme = GitHub-Dark-Default
 confirm-close-surface = false
 macos-option-as-alt = true
 macos-titlebar-style = "tabs"
+maximize = true

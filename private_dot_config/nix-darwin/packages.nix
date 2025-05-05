@@ -13,6 +13,9 @@
 
   environment.systemPackages = with pkgs; [
     # GUI
+    monitorcontrol
+    iina
+    keka
     zed-editor
     hoppscotch
     google-chrome
@@ -57,5 +60,6 @@
     # Other
     yt-dlp
     ffmpeg
+    nix-search-tv
   ];
 }

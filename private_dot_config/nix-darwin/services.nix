@@ -147,24 +147,12 @@
           run = "move-node-to-workspace 3";
         }
         {
-          "if".app-id = "com.logi.ghub";
-          run = [ "move-node-to-workspace Q" ];
-        }
-        {
-          "if".app-id = "com.rogueamoeba.Loopback";
-          run = [ "move-node-to-workspace Q" ];
-        }
-        {
           "if".app-id = "com.amnezia.AmneziaVPN";
           run = [ "move-node-to-workspace Q" ];
         }
         {
           "if".app-id = "com.google.Chrome";
           run = "move-node-to-workspace E";
-        }
-        {
-          "if".app-id = "com.apple.iBooksX";
-          run = "move-node-to-workspace R";
         }
         {
           "if".app-id = "io.hoppscotch.desktop";
@@ -181,6 +169,10 @@
         {
           "if".app-id = "com.apple.finder";
           run = "move-node-to-workspace F";
+        }
+        {
+          "if".app-id = "com.apple.iBooksX";
+          run = "move-node-to-workspace B";
         }
         {
           "if".app-id = "com.image-line.flstudio";
