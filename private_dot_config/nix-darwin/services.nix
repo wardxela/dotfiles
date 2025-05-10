@@ -86,7 +86,7 @@
         alt-shift-y = "move-node-to-workspace Y";
         alt-shift-z = "move-node-to-workspace Z";
 
-        alt-tab = "move-workspace-to-monitor --wrap-around next";
+        alt-shift-tab = "move-workspace-to-monitor --wrap-around next";
         alt-shift-semicolon = "mode service";
       };
       mode.service.binding = {
