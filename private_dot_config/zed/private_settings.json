@@ -117,7 +117,7 @@
       "available_models": [
         {
           "name": "deepseek/deepseek-chat-v3-0324",
-          "display_name": "DeepSeek V3",
+          "display_name": "My DeepSeek V3",
           "max_tokens": 64000
         }
       ],
