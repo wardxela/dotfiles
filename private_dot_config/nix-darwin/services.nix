@@ -151,10 +151,6 @@
           run = [ "move-node-to-workspace Q" ];
         }
         {
-          "if".app-id = "com.google.Chrome";
-          run = "move-node-to-workspace E";
-        }
-        {
           "if".app-id = "io.hoppscotch.desktop";
           run = [ "move-node-to-workspace A" ];
         }
@@ -169,6 +165,10 @@
         {
           "if".app-id = "com.apple.finder";
           run = "move-node-to-workspace F";
+        }
+        {
+          "if".app-id = "com.google.Chrome";
+          run = "move-node-to-workspace C";
         }
         {
           "if".app-id = "com.apple.iBooksX";
