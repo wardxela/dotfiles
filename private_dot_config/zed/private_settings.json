@@ -106,7 +106,7 @@
 
   /* AI */
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "supermaven"
   },
   "assistant": {
     "default_model": {
@@ -127,7 +127,7 @@
         {
           "name": "google/gemini-2.5-flash-preview",
           "display_name": "gemini-2.5-flash-preview",
-          "max_tokens": 1004934
+          "max_tokens": 1000000
         }
       ],
       "version": "1"
