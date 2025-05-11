@@ -16,10 +16,9 @@
 
 ## Progress:
 
-- [ ] Migrate software configuration to home-manager
+- [x] Chezmoi + GoPass
 - [ ] Add support for Linux
 - [ ] Installation guide
-- [ ] Env support for sensitive data (idea)
 
 ## Screenshots
 
