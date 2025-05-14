@@ -13,6 +13,7 @@
 
   environment.systemPackages = with pkgs; [
     # GUI
+    nur.repos.natsukium.zen-browser
     monitorcontrol
     iina
     keka
@@ -22,8 +23,11 @@
     qbittorrent
     raycast
     katawa-shoujo-re-engineered
+    # TODO: ld: symbol(s) not found for architecture x86_64
+    # amnezia-vpn
 
     # Terminal
+    nur.repos.DimitarNestorov.ghostty
     fishPlugins.tide
     chezmoi
     fastfetch

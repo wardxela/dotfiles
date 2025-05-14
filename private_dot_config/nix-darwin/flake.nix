@@ -6,11 +6,14 @@
     nix-darwin.url = "github:LnL7/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nur.url = "github:nix-community/NUR";
+    nur.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
     inputs@{
       nix-darwin,
+      nur,
       ...
     }:
     {
@@ -19,11 +22,11 @@
         inputs = { inherit inputs; };
         specialArgs = inputs;
         modules = [
+          nur.modules.darwin.default
           ./system.nix
           ./packages.nix
           ./programs.nix
           ./services.nix
-          ./homebrew.nix
           ./hot-keys.nix
           ./launchd.nix
         ];
