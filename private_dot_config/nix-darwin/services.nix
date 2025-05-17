@@ -151,7 +151,7 @@
           run = [ "move-node-to-workspace Q" ];
         }
         {
-          "if".app-id = "io.hoppscotch.desktop";
+          "if".app-id = "jan.ai.app";
           run = [ "move-node-to-workspace A" ];
         }
         {
