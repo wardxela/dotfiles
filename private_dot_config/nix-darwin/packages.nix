@@ -46,6 +46,8 @@
     gopass-jsonapi
 
     # Compilers/Interpreters/Runtimes/etc.
+    gnumake
+    clang
     bun
     fnm
     rustup

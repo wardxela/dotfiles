@@ -51,6 +51,10 @@
 
       hitoolbox.AppleFnUsageType = "Do Nothing";
 
+      menuExtraClock = {
+        ShowSeconds = true;
+      };
+
       NSGlobalDomain = {
         _HIHideMenuBar = true;
         AppleFontSmoothing = 0;
