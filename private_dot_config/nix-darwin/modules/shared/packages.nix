@@ -1,12 +1,6 @@
 { pkgs, ... }:
 
 {
-  nixpkgs = {
-    hostPlatform = "aarch64-darwin";
-    # TODO: allow unfree packages explicitly (not globally)
-    config.allowUnfree = true;
-  };
-
   fonts.packages = [
     pkgs.nerd-fonts.jetbrains-mono
   ];
@@ -14,10 +8,6 @@
   environment.systemPackages = with pkgs; [
     # GUI
     nur.repos.natsukium.zen-browser
-    nur.repos.DimitarNestorov.ghostty
-    monitorcontrol
-    iina
-    keka
     zed-editor
     hoppscotch
     google-chrome
@@ -60,7 +50,6 @@
     nixfmt-rfc-style
     glab
     gitui
-    colima
     docker
     lazydocker
 

@@ -106,9 +106,7 @@
           "close-all-windows-but-current"
           "mode main"
         ];
-
         #s = ["layout sticky tiling" "mode main"];
-
         alt-shift-h = [
           "join-with left"
           "mode main"
@@ -145,10 +143,6 @@
         {
           "if".app-id = "com.mitchellh.ghostty";
           run = "move-node-to-workspace 3";
-        }
-        {
-          "if".app-id = "com.amnezia.AmneziaVPN";
-          run = [ "move-node-to-workspace Q" ];
         }
         {
           "if".app-id = "jan.ai.app";
