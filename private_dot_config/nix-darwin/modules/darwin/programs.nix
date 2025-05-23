@@ -15,10 +15,5 @@
         zed = "zeditor";
       };
     };
-
-    tmux = {
-      enable = true;
-      enableVim = true;
-    };
   };
 }

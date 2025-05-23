@@ -29,6 +29,10 @@
     bat
     helix
     ncdu
+    mprocs
+    just
+    dust
+    zellij
 
     # Privacy
     gnupg
