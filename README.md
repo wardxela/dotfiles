@@ -19,6 +19,7 @@
 - [x] Chezmoi + GoPass
 - [ ] Add support for Linux
 - [ ] Installation guide
+- [ ] Remove chezmoi, use only nix
 
 ## Screenshots
 

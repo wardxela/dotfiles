@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ../../modules/darwin
     ../../modules/shared
+    ../../modules/darwin
   ];
 
   nixpkgs = {

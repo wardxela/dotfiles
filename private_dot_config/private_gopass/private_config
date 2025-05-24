@@ -1,4 +1,0 @@
-[mounts]
-    path = ~/.local/share/gopass/stores/root
-[show]
-    safecontent = true
