@@ -28,6 +28,28 @@
         };
       }
     ];
+    extensions = [
+      "codebook"
+      "colored-zed-icons-theme"
+      "docker-compose"
+      "dockerfile"
+      "emmet"
+      "env"
+      "fish"
+      "git-firefly"
+      "github-theme"
+      "html"
+      "lua"
+      "mcp-server-context7"
+      "mcp-server-github"
+      "nix"
+      "php"
+      "prisma"
+      "scss"
+      "sql"
+      "toml"
+      "vue"
+    ];
     userSettings =
       let
         panelSize = 360;
@@ -84,28 +106,6 @@
         terminal = {
           default_height = 450;
         };
-        auto_install_extensions = {
-          codebook = true;
-          colored-zed-icons-theme = true;
-          docker-compose = true;
-          dockerfile = true;
-          emmet = true;
-          env = true;
-          fish = true;
-          git-firefly = true;
-          github-theme = true;
-          html = true;
-          lua = true;
-          mcp-server-context7 = true;
-          mcp-server-github = true;
-          nix = true;
-          php = true;
-          prisma = true;
-          scss = true;
-          sql = true;
-          toml = true;
-          vue = true;
-        };
         languages = {
           JavaScript = {
             formatter = {
@@ -129,9 +129,17 @@
             };
           };
           Nix = {
-            formatter = {
-              external = {
-                command = "nixfmt";
+            language_servers = [
+              "nil"
+              "!nixd"
+            ];
+          };
+        };
+        lsp = {
+          nil = {
+            settings = {
+              formatting = {
+                command = [ "nixfmt" ];
               };
             };
           };

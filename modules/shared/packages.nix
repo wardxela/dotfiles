@@ -49,7 +49,6 @@
 
     # Development Tools
     nil
-    nixd
     nixfmt-rfc-style
     glab
     gitui
