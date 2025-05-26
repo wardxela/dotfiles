@@ -2,8 +2,8 @@
 
 {
   system = {
-    # Used for backwards compatibility, please read the changelog before changing.
-    # $ darwin-rebuild changelog
+    primaryUser = "wardxela";
+
     stateVersion = 6;
 
     # Set Git commit hash for darwin-version.
