@@ -19,7 +19,6 @@
     # Terminal
     git
     fishPlugins.tide
-    chezmoi
     fastfetch
     zoxide
     eza

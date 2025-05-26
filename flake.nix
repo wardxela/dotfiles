@@ -26,12 +26,12 @@
           specialArgs = inputs;
           modules = [
             nur.modules.darwin.default
-            ./systems/mac/configuration.nix
+            ./hosts/mac/configuration.nix
             home-manager.darwinModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.wardxela = ./systems/mac/home.nix;
+              home-manager.users.wardxela = ./hosts/mac/home.nix;
             }
           ];
         };

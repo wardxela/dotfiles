@@ -17,7 +17,7 @@
 ## Progress:
 
 - [x] Chezmoi + GoPass
-- [ ] Remove chezmoi, use only nix
+- [x] Remove chezmoi, use only nix
 - [ ] Add support for Linux
 - [ ] Installation guide
 
