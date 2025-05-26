@@ -5,7 +5,6 @@
 ## Features
 
 - Declarative configuration powered by [Nix](https://nixos.org/)
-- Easy to install & update with [chezmoi](https://www.chezmoi.io/)
 - Fully configured MacOS. Essential features include:
   - Tweaked Dock, Finder and other system preferences
   - Enabled [AeroSpace](https://github.com/nikitabobko/AeroSpace) window manager
@@ -16,8 +15,6 @@
 
 ## Progress:
 
-- [x] Chezmoi + GoPass
-- [x] Remove chezmoi, use only nix
 - [ ] Add support for Linux
 - [ ] Installation guide
 
