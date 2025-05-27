@@ -14,12 +14,29 @@
 
   outputs =
     inputs@{
+      nixpkgs,
       nix-darwin,
       home-manager,
       nur,
       ...
     }:
     {
+      nixosConfigurations = {
+        nixos = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = inputs;
+          modules = [
+            ./hosts/desktop/configuration.nix
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.wardxela = ./hosts/desktop/home.nix;
+            }
+          ];
+        };
+      };
+
       darwinConfigurations = {
         mac = nix-darwin.lib.darwinSystem {
           system = "aarch64-darwin";

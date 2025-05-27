@@ -69,7 +69,7 @@
         };
         icon_theme = "Colored Zed Icons Theme Dark";
         theme = {
-          mode = "system";
+          mode = "dark";
           light = "Github Light";
           dark = "Github Dark";
         };

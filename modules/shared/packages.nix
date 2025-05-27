@@ -6,17 +6,15 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    # GUI
-    nur.repos.natsukium.zen-browser
+    # GUIs
     zed-editor
     hoppscotch
     google-chrome
     qbittorrent
     katawa-shoujo-re-engineered
-    # TODO: ld: symbol(s) not found for architecture x86_64
-    # amnezia-vpn
 
     # Terminal
+    pinentry-tty
     git
     fishPlugins.tide
     fastfetch
