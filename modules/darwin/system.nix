@@ -39,7 +39,7 @@
         minimize-to-application = true;
         mru-spaces = false;
         persistent-apps = [
-          "${pkgs.nur.repos.natsukium.zen-browser}/Applications/Zen.app"
+          "/Applications/Zen.app"
           "${pkgs.zed-editor}/Applications/Zed.app"
           "${pkgs.nur.repos.DimitarNestorov.ghostty}/Applications/Ghostty.app"
           "/Applications/Legcord.app"
