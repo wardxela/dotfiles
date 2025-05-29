@@ -14,10 +14,10 @@
     katawa-shoujo-re-engineered
 
     # Terminal
-    pinentry-tty
     git
     fishPlugins.tide
     fastfetch
+    inxi
     zoxide
     eza
     yazi
@@ -30,6 +30,7 @@
     just
     dust
     zellij
+    pinentry-tty
 
     # Privacy
     gnupg
