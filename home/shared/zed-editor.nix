@@ -110,21 +110,21 @@
           JavaScript = {
             formatter = {
               code_actions = {
-                source.fixAll.eslint = true;
+                "source.fixAll.eslint" = true;
               };
             };
           };
           TypeScript = {
             formatter = {
               code_actions = {
-                source.fixAll.eslint = true;
+                "source.fixAll.eslint" = true;
               };
             };
           };
           TSX = {
             formatter = {
               code_actions = {
-                source.fixAll.eslint = true;
+                "source.fixAll.eslint" = true;
               };
             };
           };
