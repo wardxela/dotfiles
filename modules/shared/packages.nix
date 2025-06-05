@@ -31,6 +31,9 @@
     dust
     zellij
     pinentry-tty
+    tabiew
+    speedread
+    ggh
 
     # Privacy
     gnupg
