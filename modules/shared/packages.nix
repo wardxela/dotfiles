@@ -34,6 +34,7 @@
     tabiew
     speedread
     ggh
+    weechat
 
     # Privacy
     gnupg
