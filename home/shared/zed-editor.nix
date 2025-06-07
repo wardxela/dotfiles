@@ -27,6 +27,13 @@
           ctrl-k = "editor::ContextMenuPrevious";
         };
       }
+      {
+        context = "vim_mode == insert";
+        use_key_equivalents = true;
+        bindings = {
+          cmd-i = "editor::ShowCompletions";
+        };
+      }
     ];
     extensions = [
       "codebook"
