@@ -42,7 +42,6 @@
           "/Applications/Zen.app"
           "${pkgs.zed-editor}/Applications/Zed.app"
           "${pkgs.nur.repos.DimitarNestorov.ghostty}/Applications/Ghostty.app"
-          "/Applications/Legcord.app"
         ];
         show-recents = false;
         showhidden = true;

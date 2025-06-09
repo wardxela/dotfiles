@@ -31,6 +31,7 @@
         alt-7 = "workspace 7";
         alt-8 = "workspace 8";
         alt-9 = "workspace 9";
+        alt-0 = "workspace 10";
         alt-a = "workspace A";
         alt-b = "workspace B";
         alt-c = "workspace C";
@@ -63,6 +64,7 @@
         alt-shift-7 = "move-node-to-workspace 7";
         alt-shift-8 = "move-node-to-workspace 8";
         alt-shift-9 = "move-node-to-workspace 9";
+        alt-shift-0 = "move-node-to-workspace 10";
         alt-shift-a = "move-node-to-workspace A";
         alt-shift-b = "move-node-to-workspace B";
         alt-shift-c = "move-node-to-workspace C";
@@ -151,10 +153,6 @@
         {
           "if".app-id = "com.spotify.client";
           run = [ "move-node-to-workspace S" ];
-        }
-        {
-          "if".app-id = "app.legcord.Legcord";
-          run = "move-node-to-workspace D";
         }
         {
           "if".app-id = "com.apple.finder";
