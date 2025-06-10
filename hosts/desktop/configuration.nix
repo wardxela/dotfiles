@@ -37,11 +37,16 @@
       autoRepeatInterval = 60;
       xkb = {
         layout = "us,ru";
-        variant = "";
+        options = "grp:caps_toggle";
       };
       desktopManager.xterm.enable = false;
       windowManager.i3.enable = true;
-      displayManager.lightdm.enable = true;
+      displayManager = {
+        lightdm.enable = true;
+        sessionCommands = ''
+          ${pkgs.xorg.xsetroot}/bin/xsetroot -solid black
+        '';
+      };
       videoDrivers = [ "nvidia" ];
     };
     displayManager.defaultSession = "none+i3";

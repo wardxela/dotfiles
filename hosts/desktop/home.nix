@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -59,7 +59,10 @@
 
           "${mod}+Shift+Tab" = "move workspace to output next";
         };
-        window.titlebar = false;
+        window = {
+          hideEdgeBorders = "both";
+          titlebar = false;
+        };
         bars = [
           {
             mode = "invisible";
@@ -67,4 +70,11 @@
         ];
       };
     };
+
+  programs.rofi = {
+    enable = true;
+    font = "JetBrainsMono Nerd Font";
+    terminal = "${pkgs.ghostty}/bin/ghostty";
+    theme = "Arc-Dark";
+  };
 }
