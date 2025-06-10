@@ -35,6 +35,7 @@
     speedread
     ggh
     weechat
+    htop
 
     # Privacy
     gnupg
