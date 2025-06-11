@@ -9,6 +9,8 @@
         bindings = {
           cmd-g = "git_panel::ToggleFocus";
           cmd-e = "project_panel::ToggleFocus";
+          cmd-j = "workspace::ToggleBottomDock";
+          cmd-r = "workspace::ToggleRightDock";
         };
       }
       {
