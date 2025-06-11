@@ -12,7 +12,6 @@
     pavucontrol
     blueman
     atlauncher
-    steam-run
     obs-studio
     zen-browser.packages."${system}".default
     jan

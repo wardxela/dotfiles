@@ -75,9 +75,8 @@
     };
   };
 
-  programs = {
-    amnezia-vpn.enable = true;
-  };
+  programs.amnezia-vpn.enable = true;
+  programs.nix-ld.enable = true;
 
   security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
 
