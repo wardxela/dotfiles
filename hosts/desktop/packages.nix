@@ -1,15 +1,20 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  zen-browser,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
     # GUI
-    firefox
     ghostty
     rofi
     pavucontrol
     blueman
     atlauncher
     steam-run
+    obs-studio
+    zen-browser.packages."${system}".default
 
     lxappearance
 

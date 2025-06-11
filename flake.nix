@@ -10,6 +10,8 @@
     nur.url = "github:nix-community/NUR";
     nur.inputs.nixpkgs.follows = "nixpkgs";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    zen-browser.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -18,6 +20,7 @@
       nix-darwin,
       home-manager,
       nur,
+      zen-browser,
       ...
     }:
     {
@@ -31,7 +34,12 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.wardxela = ./hosts/desktop/home.nix;
+              home-manager.users.wardxela = {
+                imports = [
+                  zen-browser.homeModules.default
+                  ./hosts/desktop/home.nix
+                ];
+              };
             }
           ];
         };
