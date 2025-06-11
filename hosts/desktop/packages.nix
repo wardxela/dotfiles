@@ -15,6 +15,7 @@
     obs-studio
     zen-browser.packages."${system}".default
     jan
+    exodus
 
     lxappearance
 
