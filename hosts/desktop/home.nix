@@ -16,11 +16,27 @@
     let
       mod = "Mod1";
       super = "Mod4";
+      mainDesktop = "DP-0";
+      secondDesktop = "HDMI-1";
     in
     {
       enable = true;
       config = {
         modifier = mod;
+        window = {
+          hideEdgeBorders = "both";
+          titlebar = false;
+          border = 0;
+        };
+        floating = {
+          titlebar = false;
+          border = 0;
+        };
+        bars = [
+          {
+            mode = "invisible";
+          }
+        ];
         keybindings = {
           "${mod}+space" = "exec --no-startup-id rofi -show drun";
           "${mod}+Return" = "exec ghostty";
@@ -62,15 +78,53 @@
 
           "${mod}+Shift+Tab" = "move workspace to output next";
         };
-        window = {
-          hideEdgeBorders = "both";
-          titlebar = false;
-        };
-        bars = [
+        workspaceOutputAssign = [
           {
-            mode = "invisible";
+            output = secondDesktop;
+            workspace = "1";
+          }
+          {
+            output = mainDesktop;
+            workspace = "2";
+          }
+          {
+            output = mainDesktop;
+            workspace = "3";
+          }
+          {
+            output = mainDesktop;
+            workspace = "4";
+          }
+          {
+            output = mainDesktop;
+            workspace = "5";
+          }
+          {
+            output = mainDesktop;
+            workspace = "6";
+          }
+          {
+            output = mainDesktop;
+            workspace = "7";
+          }
+          {
+            output = mainDesktop;
+            workspace = "8";
+          }
+          {
+            output = mainDesktop;
+            workspace = "9";
+          }
+          {
+            output = mainDesktop;
+            workspace = "10";
           }
         ];
+        assigns = {
+          "number 1" = [ { class = "^zen$"; } ];
+          "number 2" = [ { class = "^dev.zed.Zed$"; } ];
+          "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
+        };
       };
     };
 
