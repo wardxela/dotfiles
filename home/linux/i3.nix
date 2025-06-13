@@ -30,8 +30,13 @@
           "${mod}+space" = "exec --no-startup-id rofi -show drun";
           "${mod}+Return" = "exec ghostty";
           "${super}+q" = "kill";
-
           "${super}+Shift+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
+          "${super}+Shift+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";
+          "${super}+Shift+x" = ''
+            exec --no-startup-id maim --select |\
+            tesseract - - -l eng+rus |\
+            xclip -selection clipboard
+          '';
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";

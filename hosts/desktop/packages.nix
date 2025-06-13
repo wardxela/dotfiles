@@ -16,12 +16,13 @@
     zen-browser.packages."${system}".default
     jan
     exodus
-
+    xcolor
+    xclip
     lxappearance
 
-    # Terminal
+    # CLI
     vim
     maim
-    xclip
+    tesseract
   ];
 }
