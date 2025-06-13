@@ -3,6 +3,7 @@
 {
   imports = [
     ../../home/shared
+    ../../home/linux
   ];
 
   home.username = "wardxela";
