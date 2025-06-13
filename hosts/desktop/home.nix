@@ -15,6 +15,7 @@
   xsession.windowManager.i3 =
     let
       mod = "Mod1";
+      super = "Mod4";
     in
     {
       enable = true;
@@ -23,7 +24,9 @@
         keybindings = {
           "${mod}+space" = "exec --no-startup-id rofi -show drun";
           "${mod}+Return" = "exec ghostty";
-          "${mod}+Shift+q" = "kill";
+          "${super}+q" = "kill";
+
+          "${super}+Shift+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";

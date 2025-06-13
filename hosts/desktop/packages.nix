@@ -21,5 +21,7 @@
 
     # Terminal
     vim
+    maim
+    xclip
   ];
 }
