@@ -63,5 +63,6 @@
     yt-dlp
     ffmpeg
     nix-search-tv
+    nvd
   ];
 }
