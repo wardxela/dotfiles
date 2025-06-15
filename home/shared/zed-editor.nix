@@ -9,10 +9,8 @@
         bindings = {
           cmd-g = "git_panel::ToggleFocus";
           cmd-e = "project_panel::ToggleFocus";
-          cmd-j = "workspace::ToggleBottomDock";
-          cmd-r = "workspace::ToggleRightDock";
-          "cmd-[" = "pane::ActivatePreviousItem";
-          "cmd-]" = "pane::ActivateNextItem";
+          "ctrl-{" = "pane::ActivatePreviousItem";
+          "ctrl-}" = "pane::ActivateNextItem";
         };
       }
       {
