@@ -19,6 +19,7 @@
     xcolor
     xclip
     lxappearance
+    legcord
 
     # CLI
     vim
