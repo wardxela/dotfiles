@@ -80,6 +80,13 @@
 
   security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
 
+  virtualisation.docker = {
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   users.users.wardxela = {
     isNormalUser = true;
     description = "Alexander";

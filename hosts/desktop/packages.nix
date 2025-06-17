@@ -7,9 +7,10 @@
 {
   environment.systemPackages = with pkgs; [
     # GUI
+    anytype
     ghostty
     rofi
-    pavucontrol
+    pwvucontrol
     blueman
     atlauncher
     obs-studio
@@ -18,12 +19,13 @@
     exodus
     xcolor
     xclip
-    lxappearance
     legcord
+    zathura
 
     # CLI
     vim
     maim
     tesseract
+    unrar
   ];
 }

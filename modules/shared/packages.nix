@@ -56,7 +56,6 @@
     nixfmt-rfc-style
     glab
     gitui
-    docker
     lazydocker
 
     # Other

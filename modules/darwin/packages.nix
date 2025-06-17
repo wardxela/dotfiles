@@ -10,5 +10,6 @@
 
     # Development Tools
     colima
+    docker
   ];
 }
