@@ -30,6 +30,6 @@
     feh
 
     # Other
-    pkgs.gcr
+    gcr
   ];
 }
