@@ -5,7 +5,7 @@
     enable = true;
     font = "Roboto";
     terminal = "${pkgs.ghostty}/bin/ghostty";
-    theme = ../../assets/spotlight-dark.rasi;
+    theme = ../../assets/raycast-dark.rasi;
     extraConfig = {
       kb-row-up = "Up,Control+k";
       kb-row-down = "Down,Control+j";

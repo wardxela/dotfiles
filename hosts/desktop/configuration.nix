@@ -47,7 +47,17 @@
       videoDrivers = [ "nvidia" ];
     };
     displayManager.defaultSession = "none+i3";
-    picom.enable = true;
+    picom = {
+      enable = true;
+      backend = "glx";
+      shadow = true;
+      settings = {
+        blur = {
+          method = "dual_kawase";
+          size = 44;
+        };
+      };
+    };
     gnome.gnome-keyring.enable = true;
     pipewire = {
       enable = true;

@@ -1,10 +1,16 @@
 {
   pkgs,
   zen-browser,
+  apple-fonts,
   ...
 }:
 
 {
+  fonts.packages = [
+    pkgs.nerd-fonts.jetbrains-mono
+    apple-fonts.packages.${pkgs.system}.sf-pro
+  ];
+
   environment.systemPackages = with pkgs; [
     # GUI
     anytype
