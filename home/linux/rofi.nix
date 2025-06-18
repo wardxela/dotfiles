@@ -3,9 +3,9 @@
 {
   programs.rofi = {
     enable = true;
-    font = "JetBrainsMono Nerd Font";
+    font = "Roboto";
     terminal = "${pkgs.ghostty}/bin/ghostty";
-    theme = "Arc-Dark";
+    theme = ../../assets/spotlight-dark.rasi;
     extraConfig = {
       kb-row-up = "Up,Control+k";
       kb-row-down = "Down,Control+j";

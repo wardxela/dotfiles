@@ -27,7 +27,7 @@
           }
         ];
         keybindings = {
-          "${mod}+space" = "exec --no-startup-id rofi -show drun";
+          "${mod}+space" = "exec --no-startup-id rofi -show drun -show-icons";
           "${mod}+Return" = "exec ghostty";
           "${super}+q" = "kill";
           "${super}+Shift+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";

@@ -43,13 +43,12 @@
       windowManager.i3.enable = true;
       displayManager = {
         lightdm.enable = true;
-        sessionCommands = ''
-          ${pkgs.xorg.xsetroot}/bin/xsetroot -solid black
-        '';
       };
       videoDrivers = [ "nvidia" ];
     };
     displayManager.defaultSession = "none+i3";
+    picom.enable = true;
+    gnome.gnome-keyring.enable = true;
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -58,7 +57,6 @@
       # Uncomment the following line if you want to use JACK applications
       # jack.enable = true;
     };
-    pulseaudio.enable = false; # Use Pipewire, the modern sound subsystem
   };
 
   hardware = {

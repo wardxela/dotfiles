@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./system.nix
+    ./launchd.nix
     ./packages.nix
     ./programs.nix
     ./services.nix
-    ./launchd.nix
+    ./system.nix
   ];
 }

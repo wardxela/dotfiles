@@ -10,7 +10,6 @@
       enable = true;
       interactiveShellInit = ''
         set fish_greeting
-        export EDITOR="vim"
         zoxide init fish | source
         fnm env --use-on-cd --shell fish | source
         function y

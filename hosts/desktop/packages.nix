@@ -27,5 +27,9 @@
     maim
     tesseract
     unrar
+    feh
+
+    # Other
+    pkgs.gcr
   ];
 }

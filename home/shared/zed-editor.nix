@@ -33,7 +33,7 @@
         context = "vim_mode == insert";
         use_key_equivalents = true;
         bindings = {
-          cmd-i = "editor::ShowCompletions";
+          secondary-i = "editor::ShowCompletions";
         };
       }
     ];

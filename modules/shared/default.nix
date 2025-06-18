@@ -2,8 +2,9 @@
 
 {
   imports = [
-    ./system.nix
+    ./environment.nix
     ./packages.nix
     ./programs.nix
+    ./system.nix
   ];
 }

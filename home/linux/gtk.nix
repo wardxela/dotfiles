@@ -33,12 +33,10 @@
         gtk-application-prefer-dark-theme = true;
         gtk-decoration-layout = "appmenu:none";
       };
-      # See https://www.reddit.com/r/awesomewm/comments/u3237d/comment/i8p75c9/
+      # Ghostty border fix
       extraCss = ''
-        .background {
-            margin: 0;
-            padding: 0;
-            box-shadow: 0 0 0 0;
+        window {
+          padding: 0;
         }
       '';
     };
