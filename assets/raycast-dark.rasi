@@ -1,19 +1,27 @@
 /* Inspired by: https://github.com/amanullahmenjli */
 
+* {
+  rounded-sm: 8px;
+  rounded-md: 10px;
+  text-primary: #F2F2F2;
+  bg-selected: rgba(255, 255, 255, 0.1);
+  border-gray: rgba(242, 242, 242, 0.2);
+}
+
 window {
     width: 774px;
     background-color: rgba(24, 24, 24, 0.6);
     border: 1px;
     border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: @rounded-md;
 }
 
 mainbox {
     background-color: transparent;
     children: [inputbar, line-separator, message, listview];
     border: 1px;
-    border-color: rgba(242, 242, 242, 0.2);
-    border-radius: 10px;
+    border-color: @border-gray;
+    border-radius: @rounded-md;
 }
 
 inputbar {
@@ -41,17 +49,17 @@ line-separator {
 }
 
 message {
-    padding: 8px;
+    padding: 8px 8px 0 8px;
     background-color: transparent;
     children: [textbox];
 }
 
 textbox {
-    font: "SF Pro Medium 18px";
-    border-radius: 8px;
-    padding: 28px;
-    background-color: rgba(255, 255, 255, 0.1);
-    text-color: #F2F2F2;
+    font: "SF Pro Medium 30px";
+    border-radius: @rounded-sm;
+    padding: 34px;
+    background-color: @bg-selected;
+    text-color: @text-primary;
 }
 
 entry {
@@ -59,12 +67,12 @@ entry {
     placeholder: "Search for apps and commands...";
     placeholder-color: rgba(242, 242, 242, 0.5);
     padding: 20px 16px;
-    text-color: #F2F2F2;
+    text-color: @text-primary;
     background-color: transparent;
 }
 
 prompt {
-    text-color: #F2F2F2;
+    text-color: @text-primary;
 }
 
 listview {
@@ -75,10 +83,14 @@ listview {
 
 element {
     padding: 14px 8px;
-    border-radius: 8px;
+    border-radius: @rounded-sm;
     background-color: transparent;
     spacing: 14px;
     children: [element-icon, element-text];
+}
+
+element.selected {
+    background-color: @bg-selected;
 }
 
 element-icon {
@@ -89,11 +101,7 @@ element-icon {
 element-text {
     font: "SF Pro Medium 15px";
     vertical-align: 0.5;
-    text-color: #F2F2F2;
+    text-color: @text-primary;
     background-color: transparent;
     tab-stops: [ 624px ];
-}
-
-element.selected {
-    background-color: rgba(255, 255, 255, 0.1);
 }
