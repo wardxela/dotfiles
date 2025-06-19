@@ -27,7 +27,10 @@
           }
         ];
         keybindings = {
-          "${mod}+space" = "exec --no-startup-id rofi -show drun -show-icons";
+          "${mod}+space" = ''
+            exec --no-startup-id "rofi -show combi -combi-modes drun,ssh -combi-display-format \\"{text}&#09;<span weight='normal' alpha='50%'>{mode}</span>\\""
+          '';
+
           "${mod}+Return" = "exec ghostty";
           "${super}+q" = "kill";
           "${super}+Shift+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";

@@ -1,33 +1,24 @@
 /* Inspired by: https://github.com/amanullahmenjli */
 
-* {
-    bg-col-light: #1e1e2e;
-    selected-col: #1e1e2e;
-    blue: #89b4fa;
-    fg-col: #cdd6f4;
-    fg-col2: #f38ba8;
-    grey: #6c7086;
-}
-
 window {
-	width: 774px;
+    width: 774px;
     background-color: rgba(24, 24, 24, 0.6);
     border: 1px;
     border-color: rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
+    border-radius: 10px;
 }
 
 mainbox {
     background-color: transparent;
-	children: [inputbar, line-separator, listview];
+    children: [inputbar, line-separator, message, listview];
     border: 1px;
     border-color: rgba(242, 242, 242, 0.2);
-	border-radius: 10px;
+    border-radius: 10px;
 }
 
 inputbar {
-	children: [entry];
-	background-color: transparent;
+    children: [entry];
+    background-color: transparent;
 }
 
 line-separator {
@@ -36,20 +27,37 @@ line-separator {
     background-image: linear-gradient(
         to right,
         transparent,
+        rgba(242, 242, 242, 0.1),
         rgba(242, 242, 242, 0.2),
         rgba(242, 242, 242, 0.2),
         rgba(242, 242, 242, 0.2),
         rgba(242, 242, 242, 0.2),
-        rgba(242, 242, 242, 0.2),
+        rgba(242, 242, 242, 0.1),
+        transparent,
+        transparent,
         transparent
     );
     padding: 1px 0 0;
 }
 
+message {
+    padding: 8px;
+    background-color: transparent;
+    children: [textbox];
+}
+
+textbox {
+    font: "SF Pro Medium 18px";
+    border-radius: 8px;
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-color: #F2F2F2;
+}
+
 entry {
     font: "SF Pro Medium 18px";
     placeholder: "Search for apps and commands...";
-	placeholder-color: rgba(242, 242, 242, 0.5);
+    placeholder-color: rgba(242, 242, 242, 0.5);
     padding: 20px 16px;
     text-color: #F2F2F2;
     background-color: transparent;
@@ -67,39 +75,25 @@ listview {
 
 element {
     padding: 14px 8px;
-	border-radius: 8px;
+    border-radius: 8px;
     background-color: transparent;
-	children: [group, textbox];
-}
-
-group {
-    background-color: transparent;
-	orientation: horizontal;
-	spacing: 14px;
-	children: [element-icon, element-text];
+    spacing: 14px;
+    children: [element-icon, element-text];
 }
 
 element-icon {
     size: 20px;
-	background-color: transparent;
+    background-color: transparent;
 }
 
 element-text {
-	font: "SF Pro Medium 15px";
-	vertical-align: 0.5;
-	text-color: #F2F2F2;
-	background-color: transparent;
+    font: "SF Pro Medium 15px";
+    vertical-align: 0.5;
+    text-color: #F2F2F2;
+    background-color: transparent;
+    tab-stops: [ 668px ];
 }
 
-element selected {
+element.selected {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-textbox {
-    expand: false;
-    str: "Application";
-	background-color: transparent;
-	text-color: rgba(242, 242, 242, 0.5);
-	font: "SF Pro 15px";
-	vertical-align: 0.5;
 }
