@@ -31,7 +31,6 @@
           "${mod}+space" = "exec --no-startup-id rofi -show combi -terse -hint-result '' -hint-welcome ''";
           "${mod}+Mod1+p" = "exec --no-startup-id clipmenu";
           # TODO: https://github.com/svenstaro/rofi-calc/pull/138
-          "${mod}+Mod1+e" = "exec --no-startup-id rofi -show calc -terse -hint-result '' -hint-welcome ''";
           "${mod}+Return" = "exec ghostty";
           "${mod}+Mod1+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
           "${mod}+Mod1+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";

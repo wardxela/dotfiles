@@ -20,6 +20,10 @@
       kb-row-down = "Down,Control+j";
       kb-accept-entry = "Return";
       kb-remove-to-eol = "Control+Shift+e";
+      kb-remove-char-back = "BackSpace,Shift+BackSpace";
+      kb-mode-complete = "Control+i";
+      kb-mode-next = "Control+l";
+      kb-mode-previous = "Control+h";
       matching = "fuzzy";
       combi-modes = "drun,ssh";
       combi-display-format = "{text}&#09;<span weight='normal' alpha='50%'>{mode}</span>";
