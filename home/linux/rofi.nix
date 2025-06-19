@@ -10,20 +10,22 @@
       rofi-calc
     ];
     modes = [
-      "window"
-      "run"
-      "drun"
-      "ssh"
-      "keys"
       "combi"
       "calc"
       "emoji"
+      "window"
     ];
     extraConfig = {
       kb-row-up = "Up,Control+k";
       kb-row-down = "Down,Control+j";
       kb-accept-entry = "Return";
       kb-remove-to-eol = "Control+Shift+e";
+      matching = "fuzzy";
+      combi-modes = "drun,ssh";
+      combi-display-format = "{text}&#09;<span weight='normal' alpha='50%'>{mode}</span>";
+      drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
+      display-drun = "Application";
+      display-ssh = "SSH";
     };
   };
 }

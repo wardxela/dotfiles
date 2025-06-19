@@ -3,8 +3,7 @@
 {
   xsession.windowManager.i3 =
     let
-      mod = "Mod1";
-      super = "Mod4";
+      mod = "Mod4";
       mainDesktop = "DP-0";
       secondDesktop = "HDMI-1";
     in
@@ -27,19 +26,17 @@
           }
         ];
         keybindings = {
-          "${mod}+space" = ''
-            exec --no-startup-id "rofi -show combi -combi-modes drun,ssh -combi-display-format \\"{text}&#09;<span weight='normal' alpha='50%'>{mode}</span>\\""
-          '';
-
+          "${mod}+q" = "kill";
+          "${mod}+space" = "exec --no-startup-id rofi -show combi";
           "${mod}+Return" = "exec ghostty";
-          "${super}+q" = "kill";
-          "${super}+Shift+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
-          "${super}+Shift+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";
-          "${super}+Shift+x" = ''
+          "${mod}+Mod1+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
+          "${mod}+Mod1+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";
+          "${mod}+Mod1+x" = ''
             exec --no-startup-id maim --select |\
             tesseract - - -l eng+rus |\
             xclip -selection clipboard
           '';
+          "${mod}+Mod1+p" = "exec --no-startup-id clipmenu";
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";
@@ -73,7 +70,6 @@
           "${mod}+n" = "workspace n";
           "${mod}+o" = "workspace o";
           "${mod}+p" = "workspace p";
-          "${mod}+q" = "workspace q";
           "${mod}+r" = "workspace r";
           "${mod}+s" = "workspace s";
           "${mod}+t" = "workspace t";
@@ -106,7 +102,6 @@
           "${mod}+Shift+n" = "move container to workspace n";
           "${mod}+Shift+o" = "move container to workspace o";
           "${mod}+Shift+p" = "move container to workspace p";
-          "${mod}+Shift+q" = "move container to workspace q";
           "${mod}+Shift+r" = "move container to workspace r";
           "${mod}+Shift+s" = "move container to workspace s";
           "${mod}+Shift+t" = "move container to workspace t";

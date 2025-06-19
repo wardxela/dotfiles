@@ -91,7 +91,7 @@ element-text {
     vertical-align: 0.5;
     text-color: #F2F2F2;
     background-color: transparent;
-    tab-stops: [ 668px ];
+    tab-stops: [ 624px ];
 }
 
 element.selected {

@@ -16,6 +16,7 @@
     # Terminal
     git
     fishPlugins.tide
+    fishPlugins.plugin-sudope
     fastfetch
     inxi
     zoxide

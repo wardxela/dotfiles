@@ -3,6 +3,7 @@
 {
   imports = [
     ../../modules/shared
+    ../../modules/linux
     ./hardware-configuration.nix
     ./packages.nix
   ];
@@ -71,6 +72,7 @@
       # Uncomment the following line if you want to use JACK applications
       # jack.enable = true;
     };
+    clipmenu.enable = true;
   };
 
   hardware = {
