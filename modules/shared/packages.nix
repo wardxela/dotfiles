@@ -11,7 +11,6 @@
     hoppscotch
     google-chrome
     qbittorrent
-    katawa-shoujo-re-engineered
 
     # Terminal
     git

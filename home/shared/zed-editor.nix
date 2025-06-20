@@ -160,31 +160,6 @@
         features = {
           edit_prediction_provider = "supermaven";
         };
-        agent = {
-          default_model = {
-            provider = "openai";
-            model = "google/gemini-2.5-flash-preview";
-          };
-          version = "2";
-        };
-        language_models = {
-          openai = {
-            api_url = "https://openrouter.ai/api/v1";
-            available_models = [
-              {
-                name = "deepseek/deepseek-chat-v3-0324";
-                display_name = "deepseek-v3";
-                max_tokens = 128000;
-              }
-              {
-                name = "google/gemini-2.5-flash-preview";
-                display_name = "gemini-2.5-flash-preview";
-                max_tokens = 1000000;
-              }
-            ];
-            version = "1";
-          };
-        };
         telemetry = {
           diagnostics = false;
           metrics = false;
