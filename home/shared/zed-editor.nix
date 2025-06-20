@@ -82,6 +82,10 @@
           light = "Github Light";
           dark = "Github Dark";
         };
+        title_bar = {
+          show_user_picture = false;
+          show_sign_in = false;
+        };
         tab_bar = {
           show_nav_history_buttons = false;
         };
