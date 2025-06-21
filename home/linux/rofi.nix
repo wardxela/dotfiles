@@ -13,7 +13,6 @@
       "combi"
       "calc"
       "emoji"
-      "window"
     ];
     extraConfig = {
       kb-row-up = "Up,Control+k";
@@ -25,11 +24,13 @@
       kb-mode-next = "Control+l";
       kb-mode-previous = "Control+h";
       matching = "fuzzy";
-      combi-modes = "drun,ssh";
-      combi-display-format = "{text}&#09;<span weight='normal' alpha='50%'>{mode}</span>";
+      combi-modes = "drun,window,ssh";
+      combi-display-format = "{text}&#09;<span font='JetBrainsMono Nerd Font Normal 14px' alpha='50%'>{mode}</span>";
       drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
+      window-format = "{t}";
       display-drun = "Application";
-      display-ssh = "SSH";
+      display-ssh = "        SSH";
+      display-window = "     Window";
     };
   };
 }

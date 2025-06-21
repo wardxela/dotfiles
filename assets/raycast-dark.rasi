@@ -103,5 +103,5 @@ element-text {
     vertical-align: 0.5;
     text-color: @text-primary;
     background-color: transparent;
-    tab-stops: [ 624px ];
+    tab-stops: [ 616px ];
 }
