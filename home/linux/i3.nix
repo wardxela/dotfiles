@@ -154,7 +154,7 @@
             workspace = "9";
           }
           {
-            output = mainDesktop;
+            output = secondDesktop;
             workspace = "10";
           }
           {
@@ -250,6 +250,7 @@
           "number 1" = [ { class = "^zen$"; } ];
           "number 2" = [ { class = "^dev.zed.Zed$"; } ];
           "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
+          "number 10" = [ { class = "^Chromium-browser$"; } ];
           "a" = [ { class = "^Jan$"; } ];
           "s" = [ { class = "^Spotify$"; } ];
           "d" = [ { class = "^legcord$"; } ];

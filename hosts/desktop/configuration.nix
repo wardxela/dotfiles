@@ -51,9 +51,7 @@
     picom = {
       enable = true;
       backend = "glx";
-      shadow = true;
       settings = {
-        shadow = false;
         blur = {
           method = "dual_kawase";
           size = 44;
