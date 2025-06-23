@@ -7,4 +7,6 @@
     ./programs.nix
     ./system.nix
   ];
+
+  time.timeZone = "Europe/Moscow";
 }

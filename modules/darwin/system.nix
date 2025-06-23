@@ -95,6 +95,4 @@
       };
     };
   };
-
-  time.timeZone = "Europe/Moscow";
 }

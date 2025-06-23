@@ -5,7 +5,6 @@
     ../../modules/shared
     ../../modules/linux
     ./hardware-configuration.nix
-    ./packages.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -15,21 +14,6 @@
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
-
-  time.timeZone = "Europe/Moscow";
-
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "ru_RU.UTF-8";
-    LC_IDENTIFICATION = "ru_RU.UTF-8";
-    LC_MEASUREMENT = "ru_RU.UTF-8";
-    LC_MONETARY = "ru_RU.UTF-8";
-    LC_NAME = "ru_RU.UTF-8";
-    LC_NUMERIC = "ru_RU.UTF-8";
-    LC_PAPER = "ru_RU.UTF-8";
-    LC_TELEPHONE = "ru_RU.UTF-8";
-    LC_TIME = "ru_RU.UTF-8";
-  };
 
   services = {
     xserver = {
@@ -70,7 +54,6 @@
       # Uncomment the following line if you want to use JACK applications
       # jack.enable = true;
     };
-    ssh-agent.enable = true;
     clipmenu.enable = true;
   };
 
@@ -88,24 +71,14 @@
     };
   };
 
+  security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
+
   swapDevices = [
     {
       device = "/var/lib/swapfile";
       size = 4 * 1024;
     }
   ];
-
-  programs.amnezia-vpn.enable = true;
-  programs.nix-ld.enable = true;
-
-  security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
-
-  virtualisation.docker = {
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
-  };
 
   users.users.wardxela = {
     isNormalUser = true;

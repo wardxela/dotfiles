@@ -7,7 +7,6 @@
 
 {
   fonts.packages = [
-    pkgs.nerd-fonts.jetbrains-mono
     apple-fonts.packages.${pkgs.system}.sf-pro
   ];
 
