@@ -26,11 +26,6 @@
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
-  fileSystems."/mnt/hdd" = {
-    device = "/dev/sda2";
-    fsType = "ext4";
-  };
-
   swapDevices = [
     {
       device = "/var/lib/swapfile";
