@@ -36,6 +36,7 @@
     ggh
     weechat
     htop
+    cointop
 
     # Privacy
     gnupg
