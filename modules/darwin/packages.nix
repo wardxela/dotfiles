@@ -11,5 +11,8 @@
     # Development Tools
     colima
     docker
+
+    # Privacy
+    gnupg
   ];
 }

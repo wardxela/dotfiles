@@ -39,7 +39,6 @@
     cointop
 
     # Privacy
-    gnupg
     gopass
     gopass-jsonapi
 

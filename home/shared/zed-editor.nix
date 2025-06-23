@@ -168,7 +168,7 @@
   };
 }
 
-# TODO:
+# TODO: https://github.com/LoamStudios/zed-mcp-server-github/issues/6
 # "context_servers": {
 #   "mcp-server-github": {
 #     "settings": {

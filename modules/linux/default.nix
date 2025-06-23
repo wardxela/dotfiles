@@ -1,11 +1,22 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./environment.nix
     ./packages.nix
     ./programs.nix
+    ./services.nix
   ];
+
+  users.users.wardxela = {
+    isNormalUser = true;
+    description = "Alexander";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    shell = pkgs.fish;
+  };
 
   virtualisation.docker = {
     rootless = {
@@ -13,4 +24,11 @@
       setSocketVariable = true;
     };
   };
+
+  networking = {
+    hostName = "nixos";
+    networkmanager.enable = true;
+  };
+
+  security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
 }
