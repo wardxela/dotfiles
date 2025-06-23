@@ -70,6 +70,7 @@
       # Uncomment the following line if you want to use JACK applications
       # jack.enable = true;
     };
+    ssh-agent.enable = true;
     clipmenu.enable = true;
   };
 
@@ -86,6 +87,13 @@
       powerOnBoot = true;
     };
   };
+
+  swapDevices = [
+    {
+      device = "/var/lib/swapfile";
+      size = 4 * 1024;
+    }
+  ];
 
   programs.amnezia-vpn.enable = true;
   programs.nix-ld.enable = true;
