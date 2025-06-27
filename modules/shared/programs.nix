@@ -10,6 +10,7 @@
       enable = true;
       interactiveShellInit = ''
         set fish_greeting
+        fish_vi_key_bindings
         zoxide init fish | source
         fnm env --use-on-cd --shell fish | source
         function y
