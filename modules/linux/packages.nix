@@ -26,6 +26,7 @@
     xclip
     legcord
     zathura
+    mpv
 
     # CLI
     vim
