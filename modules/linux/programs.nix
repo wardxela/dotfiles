@@ -9,6 +9,7 @@
       pinentryPackage = pkgs.pinentry-tty;
     };
   };
+  programs.steam.enable = true;
   # TODO: Conflicts with gnome-keyring
   # programs.ssh.startAgent = true;
 }
