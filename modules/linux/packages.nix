@@ -34,8 +34,5 @@
     tesseract
     unrar
     feh
-
-    # Privacy
-    gcr
   ];
 }
