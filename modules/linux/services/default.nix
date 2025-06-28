@@ -10,6 +10,6 @@
   services = {
     clipmenu.enable = true;
     displayManager.defaultSession = "none+i3";
-    openssh.enable = true;
+    gnome.gnome-keyring.enable = true;
   };
 }
