@@ -4,6 +4,7 @@
   programs.ghostty = {
     enable = true;
     package =
+      # TODO: https://github.com/NixOS/nixpkgs/issues/388984
       if pkgs.stdenv.hostPlatform.isLinux then pkgs.ghostty else pkgs.nur.repos.DimitarNestorov.ghostty;
     settings = {
       theme = "GitHub-Dark-Default";

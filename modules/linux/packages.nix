@@ -35,7 +35,7 @@
     unrar
     feh
 
-    # Other
+    # Privacy
     gcr
   ];
 }

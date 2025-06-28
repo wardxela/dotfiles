@@ -11,6 +11,7 @@
     nur.inputs.nixpkgs.follows = "nixpkgs";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     spicetify-nix.inputs.nixpkgs.follows = "nixpkgs";
+    # TODO: https://github.com/NixOS/nixpkgs/issues/327982
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
@@ -23,7 +24,6 @@
       nix-darwin,
       home-manager,
       nur,
-      zen-browser,
       ...
     }:
     {
@@ -37,12 +37,8 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.wardxela = {
-                imports = [
-                  zen-browser.homeModules.default
-                  ./hosts/desktop/home.nix
-                ];
-              };
+              home-manager.extraSpecialArgs = inputs;
+              home-manager.users.wardxela = ./hosts/desktop/home.nix;
             }
           ];
         };
@@ -53,12 +49,13 @@
           system = "aarch64-darwin";
           specialArgs = inputs;
           modules = [
-            nur.modules.darwin.default
             ./hosts/mac/configuration.nix
+            nur.modules.darwin.default
             home-manager.darwinModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.extraSpecialArgs = inputs;
               home-manager.users.wardxela = ./hosts/mac/home.nix;
             }
           ];

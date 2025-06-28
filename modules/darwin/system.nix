@@ -2,8 +2,6 @@
 
 {
   system = {
-    primaryUser = "wardxela";
-
     stateVersion = 6;
 
     # Set Git commit hash for darwin-version.

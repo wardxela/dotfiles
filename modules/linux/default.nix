@@ -5,8 +5,10 @@
     ./environment.nix
     ./packages.nix
     ./programs.nix
-    ./services.nix
+    ./services
   ];
+
+  system.stateVersion = "24.11";
 
   users.users.wardxela = {
     isNormalUser = true;

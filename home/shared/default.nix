@@ -6,10 +6,10 @@
     ./git.nix
     ./gitui.nix
     ./helix.nix
+    ./spicetify.nix
     ./zed-editor.nix
   ];
 
-  home.username = "wardxela";
-
+  home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 }
