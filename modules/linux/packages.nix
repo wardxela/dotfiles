@@ -28,7 +28,6 @@
     maim
     tesseract
     unrar
-    feh
 
     # Privacy
     gcr

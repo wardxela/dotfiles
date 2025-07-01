@@ -10,8 +10,12 @@
       options = "grp:caps_toggle";
     };
     windowManager.i3.enable = true;
-    displayManager = {
-      lightdm.enable = true;
+    displayManager.startx = {
+      enable = true;
+      generateScript = true;
+      extraCommands = ''
+        xsetroot -solid '#000000'
+      '';
     };
   };
 }
