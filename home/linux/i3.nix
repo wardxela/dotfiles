@@ -19,6 +19,17 @@
         floating = {
           titlebar = false;
           border = 0;
+          criteria = [
+            {
+              class = "^AmneziaVPN$";
+            }
+            {
+              class = "^.blueman-manager-wrapped$";
+            }
+            {
+              class = "^pwvucontrol$";
+            }
+          ];
         };
         bars = [
           {
@@ -166,7 +177,7 @@
             workspace = "b";
           }
           {
-            output = mainDesktop;
+            output = secondDesktop;
             workspace = "c";
           }
           {
@@ -257,7 +268,38 @@
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
           "n" = [ { class = "^anytype$"; } ];
+          "m" = [ { class = "^AyuGramDesktop$"; } ];
         };
+        startup = [
+          {
+            command = "zen";
+            notification = false;
+          }
+          # TODO: It hangs for 60secs and doesn't open
+          # {
+          #   command = "zeditor -w ~/code/dotfiles";
+          #   notification = false;
+          # }
+          {
+            command = "ghostty";
+            notification = false;
+          }
+          {
+            command = "spotify";
+          }
+          {
+            command = "legcord";
+            notification = false;
+          }
+          {
+            command = "anytype";
+            notification = false;
+          }
+          {
+            command = "ayugram-desktop";
+            notification = false;
+          }
+        ];
       };
     };
 }
