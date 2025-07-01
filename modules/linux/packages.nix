@@ -12,19 +12,14 @@
 
   environment.systemPackages = with pkgs; [
     # GUI
-    anytype
-    ghostty
+    zen-browser.packages."${system}".default
     rofi
     pwvucontrol
     blueman
     atlauncher
     obs-studio
-    zen-browser.packages."${system}".default
-    jan
-    exodus
     xcolor
     xclip
-    legcord
     zathura
     mpv
 
@@ -37,5 +32,12 @@
 
     # Privacy
     gcr
+
+    # TODO: Should be in the /shared/packages
+    anytype # can't compile
+    ghostty # marked as broken
+    jan # lack of support
+    exodus # lack of support
+    legcord # lack of support
   ];
 }

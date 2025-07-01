@@ -8,9 +8,10 @@
   environment.systemPackages = with pkgs; [
     # GUIs
     zed-editor
-    hoppscotch
     google-chrome
+    ayugram-desktop
     qbittorrent
+    hoppscotch
 
     # Terminal
     git
