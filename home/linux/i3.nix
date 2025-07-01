@@ -275,17 +275,17 @@
             command = "zen";
             notification = false;
           }
-          # TODO: It hangs for 60secs and doesn't open
-          # {
-          #   command = "zeditor -w ~/code/dotfiles";
-          #   notification = false;
-          # }
+          {
+            command = "zeditor -w ~/code/dotfiles";
+            notification = false;
+          }
           {
             command = "ghostty";
             notification = false;
           }
           {
             command = "spotify";
+            notification = false;
           }
           {
             command = "legcord";
