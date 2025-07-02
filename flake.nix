@@ -7,6 +7,8 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    stylix.url = "github:danth/stylix";
+    stylix.inputs.nixpkgs.follows = "nixpkgs";
     nur.url = "github:nix-community/NUR";
     nur.inputs.nixpkgs.follows = "nixpkgs";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
@@ -14,8 +16,6 @@
     # TODO: https://github.com/NixOS/nixpkgs/issues/327982
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
-    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
-    apple-fonts.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -24,22 +24,18 @@
       nix-darwin,
       home-manager,
       nur,
+      stylix,
       ...
     }:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = inputs;
+          specialArgs = { inherit inputs; };
           modules = [
-            ./hosts/desktop/configuration.nix
+            stylix.nixosModules.stylix
             home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = inputs;
-              home-manager.users.wardxela = ./hosts/desktop/home.nix;
-            }
+            ./hosts/desktop/configuration.nix
           ];
         };
       };
@@ -47,17 +43,11 @@
       darwinConfigurations = {
         mac = nix-darwin.lib.darwinSystem {
           system = "aarch64-darwin";
-          specialArgs = inputs;
+          specialArgs = { inherit inputs; };
           modules = [
-            ./hosts/mac/configuration.nix
             nur.modules.darwin.default
             home-manager.darwinModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = inputs;
-              home-manager.users.wardxela = ./hosts/mac/home.nix;
-            }
+            ./hosts/mac/configuration.nix
           ];
         };
       };

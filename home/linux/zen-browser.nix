@@ -1,8 +1,8 @@
-{ zen-browser, ... }:
+{ inputs, ... }:
 
 {
   imports = [
-    zen-browser.homeModules.default
+    inputs.zen-browser.homeModules.default
   ];
 
   programs.zen-browser = {

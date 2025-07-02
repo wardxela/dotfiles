@@ -55,7 +55,7 @@ message {
 }
 
 textbox {
-  font: "SF Pro Medium 30px";
+  font: "Medium 30px";
   border-radius: @rounded-sm;
   padding: 34px;
   background-color: @bg-selected;
@@ -63,7 +63,7 @@ textbox {
 }
 
 entry {
-  font: "SF Pro Medium 18px";
+  font: "Medium 18px";
   placeholder: "Search for apps and commands...";
   placeholder-color: rgba(242, 242, 242, 0.5);
   padding: 20px 16px;
@@ -99,7 +99,7 @@ element-icon {
 }
 
 element-text {
-  font: "SF Pro Medium 15px";
+  font: "Medium 15px";
   vertical-align: 0.5;
   text-color: @text-primary;
   background-color: transparent;

@@ -66,22 +66,13 @@
       in
       {
         vim_mode = true;
-        ui_font_size = 18;
-        buffer_font_family = "JetBrainsMono Nerd Font";
-        buffer_font_size = 16;
         buffer_font_features = {
           calt = false;
         };
-        ui_font_family = "JetBrainsMono Nerd Font";
         ui_font_features = {
           calt = false;
         };
         icon_theme = "Colored Zed Icons Theme Dark";
-        theme = {
-          mode = "dark";
-          light = "Github Light";
-          dark = "Github Dark";
-        };
         title_bar = {
           show_user_picture = false;
           show_sign_in = false;

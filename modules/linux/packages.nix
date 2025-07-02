@@ -1,18 +1,13 @@
 {
+  inputs,
   pkgs,
-  zen-browser,
-  apple-fonts,
   ...
 }:
 
 {
-  fonts.packages = [
-    apple-fonts.packages.${pkgs.system}.sf-pro
-  ];
-
   environment.systemPackages = with pkgs; [
     # GUI
-    zen-browser.packages."${system}".default
+    inputs.zen-browser.packages."${system}".default
     rofi
     pwvucontrol
     blueman

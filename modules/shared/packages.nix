@@ -1,10 +1,6 @@
 { pkgs, ... }:
 
 {
-  fonts.packages = [
-    pkgs.nerd-fonts.jetbrains-mono
-  ];
-
   environment.systemPackages = with pkgs; [
     # GUIs
     zed-editor

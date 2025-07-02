@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  stylix.targets.rofi.enable = false;
   programs.rofi = {
     enable = true;
     terminal = "${pkgs.ghostty}/bin/ghostty";
@@ -24,7 +25,7 @@
       kb-remove-char-back = "BackSpace,Shift+BackSpace";
       kb-mode-complete = "Control+i";
       combi-modes = "drun,window,ssh";
-      combi-display-format = "{text}&#09;<span font='JetBrainsMono Nerd Font Normal 14px' alpha='50%'>{mode}</span>";
+      combi-display-format = "{text}&#09;<span font='Normal 14px' alpha='50%'>{mode}</span>";
       drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
       window-format = "{t}";
       display-drun = "Application";
