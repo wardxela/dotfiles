@@ -6,7 +6,6 @@
     ./packages.nix
     ./programs.nix
     ./services
-    ./stylix.nix
   ];
 
   system.stateVersion = "24.11";

@@ -45,6 +45,7 @@
           system = "aarch64-darwin";
           specialArgs = { inherit inputs; };
           modules = [
+            stylix.darwinModules.stylix
             nur.modules.darwin.default
             home-manager.darwinModules.home-manager
             ./hosts/mac/configuration.nix
