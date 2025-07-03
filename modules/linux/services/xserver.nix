@@ -3,8 +3,8 @@
 {
   services.xserver = {
     enable = true;
-    autoRepeatDelay = 250;
-    autoRepeatInterval = 60;
+    autoRepeatDelay = 225;
+    autoRepeatInterval = 30;
     xkb = {
       layout = "us,ru";
       options = "grp:caps_toggle";
