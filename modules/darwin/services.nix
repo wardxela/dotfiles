@@ -148,11 +148,15 @@
         }
         {
           "if".app-id = "jan.ai.app";
-          run = [ "move-node-to-workspace A" ];
+          run = "move-node-to-workspace A";
         }
         {
           "if".app-id = "com.spotify.client";
-          run = [ "move-node-to-workspace S" ];
+          run = "move-node-to-workspace S";
+        }
+        {
+          "if".app-id = "com.hnc.Discord";
+          run = "move-node-to-workspace D";
         }
         {
           "if".app-id = "com.apple.finder";
@@ -170,13 +174,17 @@
           "if".app-id = "com.apple.iBooksX";
           run = "move-node-to-workspace B";
         }
+        # {
+        #   "if".app-id = "TODO"; # Should be Anytype
+        #   run = "move-node-to-workspace N";
+        # }
         {
-          "if".app-id = "com.image-line.flstudio";
-          run = [ "move-node-to-workspace M" ];
+          "if".app-id = "one.ayugram.AyuGramDesktop";
+          run = "move-node-to-workspace M";
         }
         {
           "if".app-id = "org.chromium.Chromium";
-          run = [ "move-node-to-workspace 10" ];
+          run = "move-node-to-workspace 10";
         }
       ];
     };

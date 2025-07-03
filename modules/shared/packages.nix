@@ -14,7 +14,6 @@ in
     discord
 
     # CLI
-    git
     fishPlugins.tide
     fishPlugins.plugin-sudope
     fastfetch
@@ -47,13 +46,9 @@ in
     gopass-jsonapi
 
     # Compilers/Interpreters/Runtimes/etc.
-    gnumake
-    clang
     bun
     fnm
     rustup
-    php
-    php84Packages.composer
 
     # Development Tools
     nil

@@ -19,6 +19,7 @@
     mpv
 
     # CLI
+    git
     vim
     maim
     tesseract
