@@ -7,8 +7,8 @@
       {
         use_key_equivalents = true;
         bindings = {
-          cmd-g = "git_panel::ToggleFocus";
-          cmd-e = "project_panel::ToggleFocus";
+          secondary-g = "git_panel::ToggleFocus";
+          secondary-e = "project_panel::ToggleFocus";
           "ctrl-{" = "pane::ActivatePreviousItem";
           "ctrl-}" = "pane::ActivateNextItem";
         };
