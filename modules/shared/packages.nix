@@ -40,6 +40,7 @@ in
     ffmpeg
     nix-search-tv
     nvd
+    nix-your-shell
 
     # Privacy
     gopass
