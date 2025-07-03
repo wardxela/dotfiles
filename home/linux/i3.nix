@@ -272,7 +272,7 @@
         };
         startup = [
           {
-            command = "zen";
+            command = "zen-beta";
             notification = false;
           }
           {
@@ -281,6 +281,10 @@
           }
           {
             command = "ghostty";
+            notification = false;
+          }
+          {
+            command = "jan";
             notification = false;
           }
           {
