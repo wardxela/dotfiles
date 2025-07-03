@@ -1,11 +1,11 @@
-{ self, pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   system = {
     stateVersion = 6;
 
     # Set Git commit hash for darwin-version.
-    configurationRevision = self.rev or self.dirtyRev or null;
+    configurationRevision = inputs.self.rev or inputs.self.dirtyRev or null;
 
     defaults = {
       CustomUserPreferences = {
