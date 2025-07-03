@@ -1,15 +1,19 @@
 { pkgs, ... }:
 
+let
+  ns-script = pkgs.writeShellScriptBin "ns" (builtins.readFile ./../../scripts/nixpkgs.sh);
+in
 {
   environment.systemPackages = with pkgs; [
-    # GUIs
+    # GUI
     zed-editor
     google-chrome
     ayugram-desktop
     qbittorrent
     hoppscotch
+    discord
 
-    # Terminal
+    # CLI
     git
     fishPlugins.tide
     fishPlugins.plugin-sudope
@@ -31,9 +35,12 @@
     tabiew
     speedread
     ggh
-    weechat
     htop
     cointop
+    yt-dlp
+    ffmpeg
+    nix-search-tv
+    nvd
 
     # Privacy
     gopass
@@ -55,10 +62,7 @@
     gitui
     lazydocker
 
-    # Other
-    yt-dlp
-    ffmpeg
-    nix-search-tv
-    nvd
+    # Scripts
+    ns-script
   ];
 }

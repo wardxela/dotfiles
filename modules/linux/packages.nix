@@ -32,6 +32,5 @@
     ghostty # marked as broken
     jan # lack of support
     exodus # lack of support
-    legcord # lack of support
   ];
 }

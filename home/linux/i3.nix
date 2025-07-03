@@ -264,7 +264,7 @@
           "number 10" = [ { class = "^Chromium-browser$"; } ];
           "a" = [ { class = "^Jan$"; } ];
           "s" = [ { class = "^Spotify$"; } ];
-          "d" = [ { class = "^legcord$"; } ];
+          "d" = [ { class = "^discord$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
           "n" = [ { class = "^anytype$"; } ];
@@ -288,7 +288,7 @@
             notification = false;
           }
           {
-            command = "legcord";
+            command = "discord";
             notification = false;
           }
           {

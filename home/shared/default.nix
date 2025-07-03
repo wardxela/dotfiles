@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./chromium.nix
     ./ghostty.nix
     ./git.nix
     ./gitui.nix
