@@ -35,7 +35,7 @@ in
     tabiew
     speedread
     ggh
-    htop
+    btop
     cointop
     yt-dlp
     ffmpeg
