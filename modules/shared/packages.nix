@@ -14,8 +14,6 @@ in
     discord
 
     # CLI
-    fishPlugins.tide
-    fishPlugins.plugin-sudope
     fastfetch
     inxi
     zoxide

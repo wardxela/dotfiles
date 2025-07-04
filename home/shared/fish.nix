@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs.fish = {
@@ -21,5 +21,15 @@
     shellAliases = {
       zed = "zeditor";
     };
+    plugins = with pkgs; [
+      {
+        name = "tide";
+        src = fishPlugins.tide.src;
+      }
+      {
+        name = "plugin-sudope";
+        src = fishPlugins.plugin-sudope.src;
+      }
+    ];
   };
 }
