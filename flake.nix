@@ -35,7 +35,7 @@
           modules = [
             stylix.nixosModules.stylix
             home-manager.nixosModules.home-manager
-            ./hosts/desktop/configuration.nix
+            ./hosts/nixos/configuration.nix
           ];
         };
       };
