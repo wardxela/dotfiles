@@ -39,6 +39,7 @@ in
     nix-search-tv
     nvd
     nix-your-shell
+    tmate
 
     # Privacy
     gopass
