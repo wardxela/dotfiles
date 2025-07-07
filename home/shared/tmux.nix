@@ -3,7 +3,13 @@
 {
   programs.tmux = {
     enable = true;
-    escapeTime = 30;
+    baseIndex = 1;
+    escapeTime = 0;
+    focusEvents = true;
+    historyLimit = 5000;
     keyMode = "vi";
+    mouse = true;
+    shortcut = "Space";
+    terminal = "xterm-ghostty";
   };
 }
