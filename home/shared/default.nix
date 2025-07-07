@@ -16,7 +16,6 @@
     ./spicetify.nix
     ./yazi.nix
     ./zed-editor.nix
-    ./zellij.nix
     ./zoxide.nix
   ];
 

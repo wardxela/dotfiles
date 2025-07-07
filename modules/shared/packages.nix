@@ -27,7 +27,6 @@ in
     mprocs
     just
     dust
-    zellij
     pinentry-tty
     tabiew
     speedread
