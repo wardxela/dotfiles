@@ -14,6 +14,7 @@ in
     discord
 
     # CLI
+    aichat
     fastfetch
     inxi
     zoxide

@@ -14,6 +14,7 @@
     ./helix.nix
     ./nix-your-shell.nix
     ./spicetify.nix
+    ./tmux.nix
     ./yazi.nix
     ./zed-editor.nix
     ./zoxide.nix
