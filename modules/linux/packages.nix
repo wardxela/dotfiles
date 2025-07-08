@@ -23,7 +23,6 @@
     vim
     maim
     tesseract
-    unrar
 
     # Privacy
     gcr

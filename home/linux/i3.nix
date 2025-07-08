@@ -173,7 +173,7 @@
             workspace = "a";
           }
           {
-            output = mainDesktop;
+            output = secondDesktop;
             workspace = "b";
           }
           {

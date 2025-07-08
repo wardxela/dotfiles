@@ -41,6 +41,11 @@ in
     nix-your-shell
     tmate
 
+    # Archiving and compression
+    zip
+    unzip
+    unrar
+
     # Privacy
     gopass
     gopass-jsonapi
