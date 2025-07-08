@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     # GUI
-    nur.repos.DimitarNestorov.ghostty
     monitorcontrol
     iina
     keka

@@ -6,8 +6,6 @@ in
 {
   environment.systemPackages = with pkgs; [
     # GUI
-    zed-editor
-    google-chrome
     ayugram-desktop
     qbittorrent
     hoppscotch
@@ -17,13 +15,8 @@ in
     aichat
     fastfetch
     inxi
-    zoxide
-    eza
-    yazi
     fzf
     ripgrep
-    bat
-    helix
     ncdu
     mprocs
     just
@@ -32,13 +25,11 @@ in
     tabiew
     speedread
     ggh
-    btop
     cointop
     yt-dlp
     ffmpeg
     nix-search-tv
     nvd
-    nix-your-shell
     tmate
 
     # Archiving and compression
@@ -59,7 +50,6 @@ in
     nil
     nixfmt-rfc-style
     glab
-    gitui
     lazydocker
 
     # Scripts
