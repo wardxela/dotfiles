@@ -2,6 +2,7 @@
 
 let
   ns-script = pkgs.writeShellScriptBin "ns" (builtins.readFile ./../../scripts/nixpkgs.sh);
+  tmx-script = pkgs.writeShellScriptBin "tmx" (builtins.readFile ./../../scripts/tmx.sh);
 in
 {
   environment.systemPackages = with pkgs; [
@@ -54,5 +55,6 @@ in
 
     # Scripts
     ns-script
+    tmx-script
   ];
 }
