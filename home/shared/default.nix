@@ -11,8 +11,8 @@
     ./ghostty.nix
     ./git.nix
     ./gitui.nix
-    ./helix.nix
     ./nix-your-shell.nix
+    ./nixvim.nix
     ./spicetify.nix
     ./tmux.nix
     ./yazi.nix

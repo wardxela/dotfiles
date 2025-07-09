@@ -10,6 +10,6 @@
     keyMode = "vi";
     mouse = true;
     shortcut = "Space";
-    terminal = "xterm-ghostty";
+    terminal = "screen-256color";
   };
 }
