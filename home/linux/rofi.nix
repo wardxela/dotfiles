@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
   stylix.targets.rofi.enable = false;
@@ -31,6 +31,15 @@
       display-drun = "Application";
       display-ssh = "        SSH";
       display-window = "     Window";
+      # TODO: https://github.com/nix-community/home-manager/issues/4783
+      "// calc" = config.lib.formats.rasi.mkLiteral ''
+
+        calc {
+          terse: true;
+          hint-result: "";
+          hint-welcome: "";
+        }
+        // '';
     };
   };
 }

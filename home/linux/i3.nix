@@ -38,8 +38,7 @@
         ];
         keybindings = {
           "${mod}+q" = "kill";
-          # TODO: https://github.com/svenstaro/rofi-calc/pull/138
-          "${mod}+space" = "exec --no-startup-id rofi -show combi -terse -hint-result '' -hint-welcome ''";
+          "${mod}+space" = "exec --no-startup-id rofi -show combi";
           "${mod}+Mod1+p" = "exec --no-startup-id clipmenu";
           # TODO: https://github.com/svenstaro/rofi-calc/pull/138
           "${mod}+Return" = "exec ghostty";
