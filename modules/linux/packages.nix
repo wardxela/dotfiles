@@ -25,6 +25,6 @@
     # TODO: Should be in the /shared/packages
     anytype # https://github.com/NixOS/nixpkgs/pull/411491
     jan # lack of support
-    exodus # lack of support
+    # exodus # lack of support + outdated
   ];
 }
