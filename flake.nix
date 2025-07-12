@@ -18,6 +18,8 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    solaar.url = "github:Svenum/Solaar-Flake/main";
+    solaar.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -27,6 +29,7 @@
       nur,
       stylix,
       nix-darwin,
+      solaar,
       ...
     }:
     {
@@ -36,6 +39,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             stylix.nixosModules.stylix
+            solaar.nixosModules.default
             home-manager.nixosModules.home-manager
             ./hosts/nixos/configuration.nix
           ];
