@@ -4,21 +4,21 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/evenok-dark.yaml";
-    fonts = {
+    fonts = with pkgs; {
       serif = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrainsMono Nerd Font";
+        package = eb-garamond;
+        name = "EB Garamond";
       };
       sansSerif = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrainsMono Nerd Font";
+        package = inter;
+        name = "Inter";
       };
       monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
+        package = nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Nerd Font";
       };
       emoji = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
+        package = nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Nerd Font";
       };
     };
