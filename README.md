@@ -1,7 +1,5 @@
 # wardxela's dotfiles
 
-![Fetch output](./docs/fetch.png)
-
 ## Features
 
 - Declarative configuration powered by [Nix](https://nixos.org/)
@@ -15,19 +13,5 @@
 
 ## Progress:
 
-- [ ] Add support for Linux
+- [x] Add support for Linux
 - [ ] Installation guide
-
-## Screenshots
-
-Editor
-
-![Editor](./docs/editor.png)
-
-Terminal
-
-![Terminal](./docs/terminal.png)
-
-Spotify
-
-![Spotify](./docs/spotify.png)
