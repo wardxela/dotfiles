@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services.xserver = {
@@ -17,5 +17,11 @@
         xsetroot -solid '#000000'
       '';
     };
+  };
+  xdg.portal = {
+    enable = true;
+    configPackages = with pkgs; [
+      xdg-desktop-portal-gtk
+    ];
   };
 }

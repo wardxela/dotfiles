@@ -11,7 +11,6 @@
       };
     };
     steam.enable = true;
-    # TODO: Conflicts with gnome-keyring
-    # ssh.startAgent = true;
+    ssh.startAgent = true;
   };
 }
