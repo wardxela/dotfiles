@@ -17,6 +17,9 @@
         xsetroot -solid '#000000'
       '';
     };
+    excludePackages = with pkgs; [
+      xterm
+    ];
   };
   xdg.portal = {
     enable = true;
