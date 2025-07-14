@@ -36,6 +36,12 @@
           secondary-i = "editor::ShowCompletions";
         };
       }
+      {
+        context = "Editor && edit_prediction";
+        bindings = {
+          ctrl-n = "editor::AcceptEditPrediction";
+        };
+      }
     ];
     extensions = [
       "codebook"
