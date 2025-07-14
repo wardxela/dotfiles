@@ -261,7 +261,6 @@
           "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
           "number 10" = [ { class = "^Chromium-browser$"; } ];
           "a" = [ { class = "^Jan$"; } ];
-          "s" = [ { class = "^Spotify$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
@@ -283,10 +282,6 @@
           }
           {
             command = "jan";
-            notification = false;
-          }
-          {
-            command = "spotify";
             notification = false;
           }
           {

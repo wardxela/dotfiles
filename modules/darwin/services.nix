@@ -153,10 +153,6 @@
           run = "move-node-to-workspace A";
         }
         {
-          "if".app-id = "com.spotify.client";
-          run = "move-node-to-workspace S";
-        }
-        {
           "if".app-id = "com.hnc.Discord";
           run = "move-node-to-workspace D";
         }

@@ -13,7 +13,6 @@
     ./gitui.nix
     ./nix-your-shell.nix
     ./nixvim.nix
-    ./spicetify.nix
     ./tmux.nix
     ./yazi.nix
     ./zed-editor.nix
