@@ -32,6 +32,7 @@ in
     nix-search-tv
     nvd
     tmate
+    termusic
 
     # Archiving and compression
     zip
