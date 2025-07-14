@@ -149,10 +149,6 @@
           run = "move-node-to-workspace 3";
         }
         {
-          "if".app-id = "jan.ai.app";
-          run = "move-node-to-workspace A";
-        }
-        {
           "if".app-id = "com.hnc.Discord";
           run = "move-node-to-workspace D";
         }

@@ -260,7 +260,6 @@
           "number 2" = [ { class = "^dev.zed.Zed$"; } ];
           "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
           "number 10" = [ { class = "^Chromium-browser$"; } ];
-          "a" = [ { class = "^Jan$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
@@ -278,10 +277,6 @@
           }
           {
             command = "ghostty";
-            notification = false;
-          }
-          {
-            command = "jan";
             notification = false;
           }
           {

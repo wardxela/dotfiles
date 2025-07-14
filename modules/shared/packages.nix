@@ -33,6 +33,7 @@ in
     nvd
     tmate
     termusic
+    chatgpt-cli
 
     # Archiving and compression
     zip
