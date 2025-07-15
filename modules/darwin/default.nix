@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../shared
     ./launchd.nix
     ./packages.nix
     ./services.nix

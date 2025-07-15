@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ../../modules/shared
     ../../modules/linux
     ./hardware-configuration.nix
   ];

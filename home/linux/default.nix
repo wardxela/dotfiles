@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../shared
     ./gtk.nix
     ./i3.nix
     ./rofi.nix

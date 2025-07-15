@@ -33,7 +33,6 @@
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
             stylix.nixosModules.stylix
@@ -46,7 +45,6 @@
 
       darwinConfigurations = {
         mac = nix-darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
           specialArgs = { inherit inputs; };
           modules = [
             stylix.darwinModules.stylix
