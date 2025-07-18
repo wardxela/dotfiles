@@ -10,16 +10,7 @@
       options = "grp:caps_toggle";
     };
     windowManager.i3.enable = true;
-    displayManager.startx = {
-      enable = true;
-      generateScript = true;
-      extraCommands = ''
-        xsetroot -solid '#000000'
-      '';
-    };
-    excludePackages = with pkgs; [
-      xterm
-    ];
+    displayManager.lightdm.enable = true;
   };
   xdg.portal = {
     enable = true;
