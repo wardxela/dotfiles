@@ -1,20 +1,14 @@
-{
-  pkgs,
-  ...
-}:
+{ pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     # GUI
     pwvucontrol
     atlauncher
-    obs-studio
     xcolor
     xclip
-    mpv
 
     # CLI
-    vim
     maim
     tesseract
 
