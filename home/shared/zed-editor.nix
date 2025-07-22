@@ -38,6 +38,7 @@
       }
       {
         context = "Editor && edit_prediction";
+        use_key_equivalents = true;
         bindings = {
           ctrl-n = "editor::AcceptEditPrediction";
         };

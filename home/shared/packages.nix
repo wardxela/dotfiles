@@ -1,11 +1,11 @@
 { pkgs, ... }:
 
 let
-  ns-script = pkgs.writeShellScriptBin "ns" (builtins.readFile ./../../scripts/nixpkgs.sh);
-  tmx-script = pkgs.writeShellScriptBin "tmx" (builtins.readFile ./../../scripts/tmx.sh);
+  ns-script = pkgs.writeShellScriptBin "ns" (builtins.readFile ./scripts/nixpkgs.sh);
+  tmx-script = pkgs.writeShellScriptBin "tmx" (builtins.readFile ./scripts/tmx.sh);
 in
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     # GUI
     ayugram-desktop
     qbittorrent
@@ -13,25 +13,18 @@ in
     discord
 
     # CLI
-    aichat
-    fastfetch
     inxi
-    fzf
-    ripgrep
     ncdu
     mprocs
     just
     dust
-    pinentry-tty
     tabiew
     speedread
     ggh
     cointop
-    yt-dlp
     ffmpeg
     nix-search-tv
     nvd
-    tmate
     termusic
 
     # Archiving and compression
@@ -43,16 +36,10 @@ in
     gopass
     gopass-jsonapi
 
-    # Compilers/Interpreters/Runtimes/etc.
-    bun
-    fnm
-    rustup
-
     # Development Tools
     nil
-    nixfmt-rfc-style
+    nixfmt
     glab
-    lazydocker
 
     # Scripts
     ns-script

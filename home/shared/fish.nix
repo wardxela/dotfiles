@@ -17,7 +17,6 @@
       set fish_greeting
       fish_vi_key_bindings
       batman --export-env | source
-      fnm env --use-on-cd --shell fish | source
     '';
     shellAliases = {
       zed = "zeditor";

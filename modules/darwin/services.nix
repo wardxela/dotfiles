@@ -168,10 +168,10 @@
           "if".app-id = "com.apple.iBooksX";
           run = "move-node-to-workspace B";
         }
-        # {
-        #   "if".app-id = "TODO"; # Should be Anytype
-        #   run = "move-node-to-workspace N";
-        # }
+        {
+          "if".app-id = "com.anytype.anytype";
+          run = "move-node-to-workspace N";
+        }
         {
           "if".app-id = "one.ayugram.AyuGramDesktop";
           run = "move-node-to-workspace M";

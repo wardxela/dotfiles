@@ -4,7 +4,6 @@
   imports = [
     ../shared
     ./launchd.nix
-    ./packages.nix
     ./services.nix
     ./system.nix
   ];

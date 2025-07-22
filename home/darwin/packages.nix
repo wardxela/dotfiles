@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     # GUI
     # TODO: https://github.com/NixOS/nixpkgs/issues/401074
     # amnezia-vpn
@@ -12,8 +12,5 @@
     # Development Tools
     colima
     docker
-
-    # Privacy
-    gnupg
   ];
 }
