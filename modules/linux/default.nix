@@ -16,6 +16,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "adbusers"
     ];
     shell = pkgs.fish;
   };
