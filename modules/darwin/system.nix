@@ -36,11 +36,6 @@
         expose-group-apps = true;
         minimize-to-application = true;
         mru-spaces = false;
-        persistent-apps = [
-          "/Applications/Zen.app"
-          "${pkgs.zed-editor}/Applications/Zed.app"
-          "${pkgs.nur.repos.DimitarNestorov.ghostty}/Applications/Ghostty.app"
-        ];
         show-recents = false;
         showhidden = true;
         tilesize = 40;

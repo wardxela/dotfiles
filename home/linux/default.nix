@@ -9,6 +9,5 @@
     ./packages.nix
     ./rofi.nix
     ./zathura.nix
-    ./zen-browser.nix
   ];
 }

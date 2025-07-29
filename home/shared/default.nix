@@ -23,6 +23,7 @@
     ./yazi.nix
     ./yt-dlp.nix
     ./zed-editor.nix
+    ./zen-browser.nix
     ./zoxide.nix
   ];
 
