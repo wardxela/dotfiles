@@ -288,7 +288,7 @@
             notification = false;
           }
           {
-            command = "ayugram-desktop";
+            command = "AyuGram";
             notification = false;
           }
         ];
