@@ -43,6 +43,15 @@
           ctrl-n = "editor::AcceptEditPrediction";
         };
       }
+      {
+        context = "VimControl && !menu && vim_mode != operator";
+        bindings = {
+          w = "vim::NextSubwordStart";
+          b = "vim::PreviousSubwordStart";
+          e = "vim::NextSubwordEnd";
+          "g e" = "vim::PreviousSubwordEnd";
+        };
+      }
     ];
     extensions = [
       "codebook"
