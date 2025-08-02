@@ -16,7 +16,7 @@
     ./gitui.nix
     ./gpg.nix
     ./nix-your-shell.nix
-    ./nixvim.nix
+    ./nvf.nix
     ./packages.nix
     ./ripgrep.nix
     ./tmux.nix

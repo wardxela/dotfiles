@@ -14,8 +14,8 @@
     # TODO: https://github.com/NixOS/nixpkgs/issues/327982
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
-    nixvim.url = "github:nix-community/nixvim";
-    nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    nvf.url = "github:notashelf/nvf";
+    nvf.inputs.nixpkgs.follows = "nixpkgs";
     solaar.url = "github:Svenum/Solaar-Flake/main";
     solaar.inputs.nixpkgs.follows = "nixpkgs";
   };
