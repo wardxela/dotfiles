@@ -33,6 +33,26 @@
           ReplaceWithRegister
           vim-exchange
         ];
+        lsp = {
+          enable = true;
+          formatOnSave = true;
+          inlayHints.enable = true;
+        };
+        languages = {
+          enableExtraDiagnostics = true;
+          enableFormat = true;
+          enableTreesitter = true;
+          nix = {
+            enable = true;
+            format = {
+              package = pkgs.nixfmt;
+              type = "nixfmt";
+            };
+          };
+        };
+        options = {
+          langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz";
+        };
         keymaps = [
           {
             key = "<Esc>";
