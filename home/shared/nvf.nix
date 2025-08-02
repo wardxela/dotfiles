@@ -1,4 +1,9 @@
-{ inputs, pkgs, ... }:
+{
+  inputs,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   imports = [ inputs.nvf.homeManagerModules.default ];
@@ -23,16 +28,25 @@
           ];
         };
         filetree.neo-tree.enable = true;
+        git.enable = true;
+        treesitter.enable = true;
         utility = {
           surround = {
             enable = true;
             useVendoredKeybindings = false;
           };
         };
+        notes.todo-comments.enable = true;
         startPlugins = with pkgs.vimPlugins; [
           ReplaceWithRegister
           vim-exchange
         ];
+        lazy.plugins = {
+          "guess-indent.nvim" = {
+            package = pkgs.vimPlugins.guess-indent-nvim;
+            setupModule = "guess-indent";
+          };
+        };
         lsp = {
           enable = true;
           formatOnSave = true;
@@ -49,6 +63,9 @@
               type = "nixfmt";
             };
           };
+          ts.enable = true;
+          markdown.enable = true;
+          html.enable = true;
         };
         options = {
           langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz";
@@ -78,6 +95,17 @@
             key = "gR";
             mode = "v";
             action = "<Plug>ReplaceWithRegisterVisual";
+          }
+        ];
+        autocmds = [
+          {
+            desc = "Highlight when yanking (copying) text";
+            event = [ "TextYankPost" ];
+            callback = lib.generators.mkLuaInline ''
+              function()
+                vim.hl.on_yank()
+              end
+            '';
           }
         ];
       };
