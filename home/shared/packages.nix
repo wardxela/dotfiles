@@ -28,6 +28,7 @@ in
     nix-search-tv
     nvd
     termusic
+    glab
 
     # Archiving and compression
     zip
@@ -39,9 +40,13 @@ in
     gopass-jsonapi
 
     # Development Tools
-    nil
+    gcc
+    nodejs
     nixfmt
-    glab
+    tree-sitter
+    nil
+    vscode-langservers-extracted
+    tailwindcss-language-server
 
     # Scripts
     ns-script

@@ -9,6 +9,7 @@
     ./eza.nix
     ./lazydocker.nix
     ./fastfetch.nix
+    ./fd.nix
     ./fish.nix
     ./fzf.nix
     ./ghostty.nix
