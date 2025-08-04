@@ -127,11 +127,11 @@
         };
         workspaceOutputAssign = [
           {
-            output = secondDesktop;
+            output = mainDesktop;
             workspace = "1";
           }
           {
-            output = mainDesktop;
+            output = secondDesktop;
             workspace = "2";
           }
           {
@@ -256,9 +256,8 @@
           }
         ];
         assigns = {
-          "number 1" = [ { class = "^zen$"; } ];
-          "number 2" = [ { class = "^dev.zed.Zed$"; } ];
-          "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
+          "number 1" = [ { class = "^com.mitchellh.ghostty$"; } ];
+          "number 2" = [ { class = "^zen$"; } ];
           "number 10" = [ { class = "^Chromium-browser$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
@@ -269,10 +268,6 @@
         startup = [
           {
             command = "zen-beta";
-            notification = false;
-          }
-          {
-            command = "zeditor -w ~/code/dotfiles";
             notification = false;
           }
           {
