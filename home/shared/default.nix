@@ -20,6 +20,7 @@
     ./nvf.nix
     ./packages.nix
     ./ripgrep.nix
+    ./thunderbird.nix
     ./tmux.nix
     ./yazi.nix
     ./yt-dlp.nix
