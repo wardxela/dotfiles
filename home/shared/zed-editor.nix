@@ -44,6 +44,15 @@
           ctrl-j = "editor::AcceptPartialEditPrediction";
         };
       }
+      {
+        context = "vim_operator == a || vim_operator == i || vim_operator == cs";
+        bindings = {
+          q = "vim::AnyQuotes";
+          b = "vim::AnyBrackets";
+          Q = "vim::MiniQuotes";
+          B = "vim::MiniBrackets";
+        };
+      }
     ];
     extensions = [
       "codebook"
