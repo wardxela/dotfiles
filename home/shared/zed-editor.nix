@@ -41,15 +41,7 @@
         use_key_equivalents = true;
         bindings = {
           ctrl-n = "editor::AcceptEditPrediction";
-        };
-      }
-      {
-        context = "VimControl && !menu && vim_mode != operator";
-        bindings = {
-          w = "vim::NextSubwordStart";
-          b = "vim::PreviousSubwordStart";
-          e = "vim::NextSubwordEnd";
-          "g e" = "vim::PreviousSubwordEnd";
+          ctrl-j = "editor::AcceptPartialEditPrediction";
         };
       }
     ];
