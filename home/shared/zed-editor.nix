@@ -5,35 +5,30 @@
     enable = true;
     userKeymaps = [
       {
-        use_key_equivalents = true;
+        context = "vim_operator == a || vim_operator == i || vim_operator == cs";
         bindings = {
-          secondary-g = "git_panel::ToggleFocus";
-          secondary-e = "project_panel::ToggleFocus";
-          "ctrl-{" = "pane::ActivatePreviousItem";
-          "ctrl-}" = "pane::ActivateNextItem";
+          q = "vim::AnyQuotes";
+          b = "vim::AnyBrackets";
+          Q = "vim::MiniQuotes";
+          B = "vim::MiniBrackets";
         };
       }
       {
-        context = "Editor";
-        use_key_equivalents = true;
+        context = "Workspace";
         bindings = {
-          ctrl-j = "menu::SelectNext";
-          ctrl-k = "menu::SelectPrevious";
+          "ctrl-p" = null;
         };
       }
       {
-        context = "Editor && (showing_code_actions || showing_completions)";
-        use_key_equivalents = true;
+        context = "(FileFinder || (FileFinder > Picker > Editor))";
         bindings = {
-          ctrl-j = "editor::ContextMenuNext";
-          ctrl-k = "editor::ContextMenuPrevious";
+          ctrl-p = "menu::SelectPrevious";
         };
       }
       {
-        context = "vim_mode == insert";
-        use_key_equivalents = true;
+        context = "!menu";
         bindings = {
-          secondary-i = "editor::ShowCompletions";
+          "space f" = "file_finder::Toggle";
         };
       }
       {
@@ -42,15 +37,6 @@
         bindings = {
           ctrl-n = "editor::AcceptEditPrediction";
           ctrl-j = "editor::AcceptPartialEditPrediction";
-        };
-      }
-      {
-        context = "vim_operator == a || vim_operator == i || vim_operator == cs";
-        bindings = {
-          q = "vim::AnyQuotes";
-          b = "vim::AnyBrackets";
-          Q = "vim::MiniQuotes";
-          B = "vim::MiniBrackets";
         };
       }
     ];
@@ -78,7 +64,7 @@
     ];
     userSettings =
       let
-        panelSize = 360;
+        default_width = 360;
         dock = "right";
       in
       {
@@ -91,41 +77,41 @@
         };
         icon_theme = "Colored Zed Icons Theme Dark";
         title_bar = {
+          show_branch_name = false;
+          show_project_items = false;
+          show_onboarding_banner = false;
           show_user_picture = false;
           show_sign_in = false;
         };
-        tab_bar = {
-          show_nav_history_buttons = false;
+        toolbar = {
+          breadcrumbs = false;
+          quick_actions = false;
         };
-        tabs = {
-          file_icons = true;
-          git_status = true;
-          activate_on_close = "history";
-        };
+        tab_bar.show = false;
         project_panel = {
-          dock = dock;
-          default_width = panelSize;
+          inherit dock default_width;
           auto_fold_dirs = false;
         };
         git_panel = {
-          dock = dock;
+          inherit dock;
         };
         collaboration_panel = {
-          dock = dock;
-          default_width = panelSize;
+          inherit dock default_width;
+          button = false;
         };
         chat_panel = {
-          default_width = panelSize;
+          inherit default_width;
         };
         outline_panel = {
-          dock = dock;
-          default_width = panelSize;
+          inherit dock default_width;
+          button = false;
         };
         notification_panel = {
-          default_width = panelSize;
+          inherit default_width;
+          button = false;
         };
         terminal = {
-          default_height = 450;
+          button = false;
         };
         languages = {
           JavaScript = {
@@ -175,12 +161,3 @@
       };
   };
 }
-
-# TODO: https://github.com/LoamStudios/zed-mcp-server-github/issues/6
-# "context_servers": {
-#   "mcp-server-github": {
-#     "settings": {
-#       "github_personal_access_token": "{{ gopass "tokens/github/zed" }}"
-#     }
-#   }
-# },

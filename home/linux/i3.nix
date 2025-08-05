@@ -256,10 +256,12 @@
           }
         ];
         assigns = {
+          # TODO: F?
           "number 1" = [ { class = "^zen$"; } ];
-          "number 2" = [ { class = "^dev.zed.Zed$"; } ];
+          # TODO: T?
           "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
           "number 10" = [ { class = "^Chromium-browser$"; } ];
+          "e" = [ { class = "^dev.zed.Zed$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
