@@ -26,9 +26,10 @@
         };
       }
       {
-        context = "!menu";
+        context = "!menu && vim_mode == normal";
         bindings = {
           "space f" = "file_finder::Toggle";
+          "space t" = "project_panel::ToggleFocus";
         };
       }
       {
