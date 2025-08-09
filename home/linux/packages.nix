@@ -7,6 +7,7 @@
     atlauncher
     xcolor
     xclip
+    vial
 
     # CLI
     maim

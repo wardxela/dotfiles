@@ -127,7 +127,7 @@
         };
         workspaceOutputAssign = [
           {
-            output = secondDesktop;
+            output = mainDesktop;
             workspace = "1";
           }
           {
@@ -187,7 +187,7 @@
             workspace = "e";
           }
           {
-            output = mainDesktop;
+            output = secondDesktop;
             workspace = "f";
           }
           {
@@ -256,13 +256,11 @@
           }
         ];
         assigns = {
-          # TODO: F?
-          "number 1" = [ { class = "^zen$"; } ];
-          # TODO: T?
-          "number 3" = [ { class = "^com.mitchellh.ghostty$"; } ];
           "number 10" = [ { class = "^Chromium-browser$"; } ];
           "e" = [ { class = "^dev.zed.Zed$"; } ];
           "d" = [ { class = "^discord$"; } ];
+          "f" = [ { class = "^zen$"; } ];
+          "g" = [ { class = "^com.mitchellh.ghostty$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
           "n" = [ { class = "^anytype$"; } ];

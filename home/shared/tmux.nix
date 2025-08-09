@@ -9,7 +9,6 @@
     historyLimit = 5000;
     keyMode = "vi";
     mouse = true;
-    shortcut = "Space";
     terminal = "screen-256color";
   };
 }
