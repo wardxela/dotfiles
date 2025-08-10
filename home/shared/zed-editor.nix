@@ -14,30 +14,10 @@
         };
       }
       {
-        context = "Workspace";
-        bindings = {
-          "ctrl-p" = null;
-        };
-      }
-      {
-        context = "(FileFinder || (FileFinder > Picker > Editor))";
-        bindings = {
-          ctrl-p = "menu::SelectPrevious";
-        };
-      }
-      {
         context = "!menu && vim_mode == normal";
         bindings = {
           "space f" = "file_finder::Toggle";
           "space t" = "project_panel::ToggleFocus";
-        };
-      }
-      {
-        context = "Editor && edit_prediction";
-        use_key_equivalents = true;
-        bindings = {
-          ctrl-n = "editor::AcceptEditPrediction";
-          ctrl-j = "editor::AcceptPartialEditPrediction";
         };
       }
     ];
