@@ -258,29 +258,26 @@
         assigns = {
           "number 10" = [ { class = "^Chromium-browser$"; } ];
           "e" = [ { class = "^dev.zed.Zed$"; } ];
+          "r" = [ { class = "^thunderbird$"; } ];
+          "t" = [ { class = "^AyuGramDesktop$"; } ];
+          "a" = [ { class = "^anytype$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "f" = [ { class = "^zen$"; } ];
           "g" = [ { class = "^com.mitchellh.ghostty$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
-          "n" = [ { class = "^anytype$"; } ];
-          "m" = [ { class = "^AyuGramDesktop$"; } ];
         };
         startup = [
-          {
-            command = "zen-beta";
-            notification = false;
-          }
           {
             command = "zeditor -w ~/code/dotfiles";
             notification = false;
           }
           {
-            command = "ghostty";
+            command = "thunderbird";
             notification = false;
           }
           {
-            command = "discord";
+            command = "ayugram";
             notification = false;
           }
           {
@@ -288,7 +285,15 @@
             notification = false;
           }
           {
-            command = "AyuGram";
+            command = "discord";
+            notification = false;
+          }
+          {
+            command = "zen-beta";
+            notification = false;
+          }
+          {
+            command = "ghostty";
             notification = false;
           }
         ];
