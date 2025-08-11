@@ -1,27 +1,23 @@
 /* Inspired by: https://github.com/amanullahmenjli */
+/* TODO: use stylix theme colors */
 
 * {
-  rounded-sm: 8px;
-  rounded-md: 10px;
   text-primary: #F2F2F2;
   bg-selected: rgba(255, 255, 255, 0.1);
-  border-gray: rgba(242, 242, 242, 0.2);
 }
 
 window {
   width: 774px;
-  background-color: rgba(24, 24, 24, 0.6);
+  background-color: rgb(0, 0, 0);
   border: 1px;
   border-color: rgba(0, 0, 0, 0.1);
-  border-radius: @rounded-md;
 }
 
 mainbox {
   background-color: transparent;
   children: [inputbar, line-separator, message, listview];
   border: 1px;
-  border-color: @border-gray;
-  border-radius: @rounded-md;
+  border-color: rgba(242, 242, 242, 0.2);
 }
 
 inputbar {
@@ -56,7 +52,6 @@ message {
 
 textbox {
   font: "Medium 30px";
-  border-radius: @rounded-sm;
   padding: 34px;
   background-color: @bg-selected;
   text-color: @text-primary;
@@ -83,7 +78,6 @@ listview {
 
 element {
   padding: 14px 8px;
-  border-radius: @rounded-sm;
   background-color: transparent;
   spacing: 14px;
   children: [element-icon, element-text];

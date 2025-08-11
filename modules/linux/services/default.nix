@@ -3,7 +3,6 @@
 {
   imports = [
     ./openssh.nix
-    ./picom.nix
     ./pipewire.nix
     ./xserver.nix
   ];
