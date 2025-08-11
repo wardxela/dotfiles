@@ -30,6 +30,7 @@
               reveal_target = "center";
             }
           ];
+          "space f b" = "tab_switcher::ToggleAll";
           "space t" = "project_panel::ToggleFocus";
         };
       }
