@@ -20,6 +20,7 @@
     ./nvf.nix
     ./packages.nix
     ./ripgrep.nix
+    ./television.nix
     ./thunderbird.nix
     ./tmux.nix
     ./yazi.nix

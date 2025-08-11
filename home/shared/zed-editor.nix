@@ -16,7 +16,20 @@
       {
         context = "!menu && vim_mode == normal";
         bindings = {
-          "space f" = "file_finder::Toggle";
+          "space f f" = [
+            "task::Spawn"
+            {
+              task_name = "File Finder";
+              reveal_target = "center";
+            }
+          ];
+          "space f g" = [
+            "task::Spawn"
+            {
+              task_name = "Find in Files";
+              reveal_target = "center";
+            }
+          ];
           "space t" = "project_panel::ToggleFocus";
         };
       }
@@ -140,5 +153,21 @@
           metrics = false;
         };
       };
+    userTasks = [
+      {
+        label = "File Finder";
+        command = "zed \"$(tv files)\"";
+        hide = "always";
+        allow_concurrent_runs = true;
+        use_new_terminal = true;
+      }
+      {
+        label = "Find in Files";
+        command = "zed \"$(tv text)\"";
+        hide = "always";
+        allow_concurrent_runs = true;
+        use_new_terminal = true;
+      }
+    ];
   };
 }
