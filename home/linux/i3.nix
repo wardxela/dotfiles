@@ -260,6 +260,7 @@
           "e" = [ { class = "^dev.zed.Zed$"; } ];
           "r" = [ { class = "^thunderbird$"; } ];
           "t" = [ { class = "^AyuGramDesktop$"; } ];
+          "s" = [ { class = "^Slack$"; } ];
           "a" = [ { class = "^anytype$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "f" = [ { class = "^zen$"; } ];
@@ -269,6 +270,10 @@
         };
         startup = [
           {
+            command = "AmneziaVPN";
+            notification = false;
+          }
+          {
             command = "zeditor -w ~/code/dotfiles";
             notification = false;
           }
@@ -277,11 +282,15 @@
             notification = false;
           }
           {
-            command = "ayugram";
+            command = "AyuGram";
             notification = false;
           }
           {
             command = "anytype";
+            notification = false;
+          }
+          {
+            command = "slack";
             notification = false;
           }
           {

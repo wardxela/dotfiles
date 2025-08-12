@@ -11,6 +11,7 @@ in
     qbittorrent
     hoppscotch
     discord
+    slack
 
     # CLI
     inxi
@@ -28,6 +29,7 @@ in
     nix-search-tv
     nvd
     termusic
+    jellyfin-tui
     glab
 
     # Archiving and compression
