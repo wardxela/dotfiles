@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-SESSION_NAME="tmux"
+SESSION_NAME="W"
 
 if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
   tmux attach-session -t"$SESSION_NAME"
 else
   tmux new-session -d -s "$SESSION_NAME"
-  tmux rename-window -t 1 main
+  tmux rename-window -t 1 shell
   tmux new-window -d -n shell -t 2
   tmux new-window -d -n shell -t 3
   tmux new-window -d -n shell -t 4
