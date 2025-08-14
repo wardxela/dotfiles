@@ -12,6 +12,7 @@
     # CLI
     maim
     tesseract
+    playerctl
 
     # TODO: Should be in the /shared/packages
     anytype # https://github.com/NixOS/nixpkgs/pull/411491

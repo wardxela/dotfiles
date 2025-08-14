@@ -39,15 +39,20 @@
         keybindings = {
           "${mod}+q" = "kill";
           "${mod}+space" = "exec --no-startup-id rofi -show combi";
-          "${mod}+Mod1+p" = "exec --no-startup-id clipmenu";
-          "${mod}+Return" = "exec ghostty";
-          "${mod}+Mod1+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
-          "${mod}+Mod1+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";
-          "${mod}+Mod1+x" = ''
+          "${mod}+Control+p" = "exec --no-startup-id clipmenu";
+          "${mod}+Control+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
+          "${mod}+Control+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";
+          "${mod}+Control+x" = ''
             exec --no-startup-id maim --select |\
             tesseract - - -l eng+rus |\
             xclip -selection clipboard
           '';
+
+          "XF86AudioPrev" = "exec --no-startup-id playerctl previous";
+          "XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ .05-";
+          "XF86AudioRaiseVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ .05+";
+          "XF86AudioNext" = "exec --no-startup-id playerctl next";
+          "XF86AudioPlay" = "exec --no-startup-id playerctl play-pause";
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";
