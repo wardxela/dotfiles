@@ -1,4 +1,9 @@
-{ pkgs, config, ... }:
+{
+  lib,
+  pkgs,
+  config,
+  ...
+}:
 
 {
   stylix.targets.rofi.enable = false;
@@ -9,6 +14,7 @@
     plugins = with pkgs; [
       rofi-emoji
       rofi-calc
+      rofi-power-menu
     ];
     modes = [
       "combi"
@@ -24,7 +30,7 @@
       kb-remove-to-eol = "Control+Shift+e";
       kb-remove-char-back = "BackSpace,Shift+BackSpace";
       kb-mode-complete = "Control+i";
-      combi-modes = "drun,window,ssh";
+      combi-modes = "drun,window,ssh,power-menu:${lib.getExe pkgs.rofi-power-menu}";
       combi-display-format = "{text}&#09;<span font='Normal 14px' alpha='50%'>{mode}</span>";
       drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
       window-format = "{t}";
