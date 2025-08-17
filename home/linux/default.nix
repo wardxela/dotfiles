@@ -3,6 +3,7 @@
 {
   imports = [
     ../shared
+    ./dunst.nix
     ./gtk.nix
     ./i3.nix
     ./mpv.nix
