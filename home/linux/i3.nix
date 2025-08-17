@@ -269,7 +269,7 @@
           "a" = [ { class = "^anytype$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "f" = [ { class = "^zen$"; } ];
-          "g" = [ { class = "^com.mitchellh.ghostty$"; } ];
+          "g" = [ { class = "^kitty$"; } ];
           "c" = [ { class = "^Google-chrome$"; } ];
           "b" = [ { class = "^Zathura$"; } ];
         };
@@ -307,7 +307,7 @@
             notification = false;
           }
           {
-            command = "ghostty";
+            command = "kitty";
             notification = false;
           }
         ];
