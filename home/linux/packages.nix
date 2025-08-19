@@ -10,7 +10,6 @@
     vial
 
     # CLI
-    maim
     tesseract
     playerctl
     ffcast

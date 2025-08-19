@@ -24,9 +24,6 @@
               class = "^AmneziaVPN$";
             }
             {
-              class = "^.blueman-manager-wrapped$";
-            }
-            {
               class = "^pwvucontrol$";
             }
           ];
@@ -40,13 +37,6 @@
           "${mod}+q" = "kill";
           "${mod}+space" = "exec --no-startup-id rofi -show combi";
           "${mod}+Control+p" = "exec --no-startup-id clipmenu";
-          "${mod}+Control+s" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
-          "${mod}+Control+c" = "exec --no-startup-id xcolor | xclip -selection clipboard";
-          "${mod}+Control+x" = ''
-            exec --no-startup-id maim --select |\
-            tesseract - - -l eng+rus |\
-            xclip -selection clipboard
-          '';
 
           "XF86AudioPrev" = "exec --no-startup-id playerctl previous";
           "XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ .05-";
