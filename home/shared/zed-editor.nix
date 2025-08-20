@@ -140,6 +140,7 @@
         lsp = {
           nil = {
             settings = {
+              nix.flake.autoArchive = true;
               formatting = {
                 command = [ "nixfmt" ];
               };
