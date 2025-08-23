@@ -12,7 +12,7 @@ in
   stylix.targets.rofi.enable = false;
   programs.rofi = {
     enable = true;
-    terminal = lib.gitExe pkgs.kitty;
+    terminal = lib.getExe pkgs.kitty;
     theme = ../../assets/raycast-dark.rasi;
     plugins = with pkgs; [
       rofi-emoji
