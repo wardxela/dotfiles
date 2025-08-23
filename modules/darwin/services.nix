@@ -6,8 +6,6 @@
     settings = {
       automatically-unhide-macos-hidden-apps = true;
       mode.main.binding = {
-        alt-enter = "exec-and-forget open -na ghostty";
-
         alt-slash = "layout tiles horizontal vertical";
         alt-comma = "layout accordion horizontal vertical";
 
@@ -145,7 +143,7 @@
           run = "move-node-to-workspace 2";
         }
         {
-          "if".app-id = "com.mitchellh.ghostty";
+          "if".app-id = "net.kovidgoyal.kitty";
           run = "move-node-to-workspace 3";
         }
         {

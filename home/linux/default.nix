@@ -6,7 +6,6 @@
     ./dunst.nix
     ./gtk.nix
     ./i3.nix
-    ./kitty.nix
     ./mpv.nix
     ./obs.nix
     ./packages.nix

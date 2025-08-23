@@ -3,7 +3,6 @@
 {
   imports = [
     ../shared
-    ./launchd.nix
     ./services.nix
     ./system.nix
   ];

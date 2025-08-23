@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, ... }:
 
 {
   system = {
@@ -11,18 +11,6 @@
       CustomUserPreferences = {
         "com.apple.symbolichotkeys" = {
           AppleSymbolicHotKeys = {
-            # Select next source in input menu
-            "60" = {
-              enabled = true;
-              value = {
-                parameters = [
-                  65535
-                  105
-                  0
-                ];
-                type = "standard";
-              };
-            };
             # Show Spotlight search (disable)
             "64" = {
               enabled = false;
@@ -58,7 +46,7 @@
         ShowRemovableMediaOnDesktop = false;
       };
 
-      hitoolbox.AppleFnUsageType = "Do Nothing";
+      hitoolbox.AppleFnUsageType = "Change Input Source";
 
       menuExtraClock = {
         ShowSeconds = true;
@@ -86,6 +74,10 @@
         EnableTilingOptionAccelerator = false;
         EnableTopTilingByEdgeDrag = false;
       };
+    };
+    keyboard = {
+      enableKeyMapping = true;
+      remapCapsLockToEscape = true;
     };
   };
 }
