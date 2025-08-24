@@ -4,10 +4,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/evenok-dark.yaml";
-    image = pkgs.fetchurl {
-      url = "https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png";
-      hash = "sha256-19oWygPEVDGVydalRdDHpZAGezKa6FJ2clBda5iZ9S0=";
-    };
+    image = ./assets/black.png;
     fonts = with pkgs; {
       serif = {
         package = eb-garamond;
@@ -27,4 +24,10 @@
       };
     };
   };
+
+  # TODO:
+  # specialisation.light.configuration.stylix = {
+  #   image = lib.mkForce ./assets/white.png;
+  #   base16Scheme = lib.mkForce "${pkgs.base16-schemes}/share/themes/cupertino.yaml";
+  # };
 }
