@@ -87,6 +87,15 @@
           inherit dock default_width;
           auto_fold_dirs = false;
         };
+        search = {
+          button = false;
+        };
+        global_lsp_settings = {
+          button = false;
+        };
+        diagnostics = {
+          button = false;
+        };
         git_panel = {
           inherit dock;
         };
