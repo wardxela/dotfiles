@@ -4,6 +4,7 @@
   imports = [
     ../shared
     ./dunst.nix
+    ./easyeffects.nix
     ./gtk.nix
     ./i3.nix
     ./mpv.nix
