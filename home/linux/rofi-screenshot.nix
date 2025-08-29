@@ -51,8 +51,8 @@ stdenv.mkDerivation {
   meta = {
     description = "Use rofi to perform various types of screenshots and screen captures";
     mainProgram = "rofi-screenshot";
-    homepage = "https://github.com/ceuk/rofi-screenshot";
-    platforms = lib.platforms.all;
+    homepage = "https://github.com/wardxela/rofi-screenshot";
+    platforms = lib.platforms.linux;
     license = lib.licenses.wtfpl;
   };
 }
