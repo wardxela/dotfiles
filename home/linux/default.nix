@@ -13,5 +13,4 @@
     ./sway.nix
     ./zathura.nix
   ];
-  services.clipmenu.enable = true;
 }

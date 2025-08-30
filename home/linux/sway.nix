@@ -57,7 +57,6 @@
         keybindings = {
           "${mod}+q" = "kill";
           "${mod}+space" = "exec rofi -show combi";
-          "${mod}+Control+p" = "exec clipmenu";
 
           "XF86AudioPrev" = "exec playerctl previous";
           "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_SINK@ .05-";
@@ -318,4 +317,6 @@
   };
 
   programs.swaylock.enable = true;
+
+  services.cliphist.enable = true;
 }

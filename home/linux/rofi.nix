@@ -8,6 +8,15 @@
 let
   rofi-screenshot = pkgs.callPackage ./rofi-screenshot.nix { };
   rofi-system = pkgs.callPackage ./rofi-system.nix { };
+  rofi-cliphist = pkgs.writeScriptBin "rofi-cliphist" ''
+    #!/usr/bin/env bash
+
+    if [ -z "$1" ]; then
+        cliphist list | sed 's/^\([0-9]\+\)[ \t]*/\1 /'
+    else
+        cliphist decode <<<"$1" | wl-copy
+    fi
+  '';
 in
 {
   stylix.targets.rofi.enable = false;
@@ -21,6 +30,7 @@ in
       rofi-power-menu
       rofi-system
       rofi-screenshot
+      rofi-cliphist
     ];
     extraConfig = {
       kb-row-up = "Up,Control+k";
@@ -31,9 +41,9 @@ in
       kb-remove-to-eol = "Control+Shift+e";
       kb-remove-char-back = "BackSpace,Shift+BackSpace";
       kb-mode-complete = "Control+i";
-      modes = "combi,calc,emoji";
+      modes = "combi,calc,emoji,cliphist:${lib.getExe rofi-cliphist}";
       matching = "fuzzy";
-      combi-modes = "drun,window,ssh,power-menu:${lib.getExe pkgs.rofi-power-menu} --choices=shutdown/reboot --confirm='',system:${lib.getExe rofi-system},screenshot:${lib.getExe rofi-screenshot}";
+      combi-modes = "drun,window,ssh,power-menu:${lib.getExe pkgs.rofi-power-menu} --choices=shutdown/reboot/lockscreen --confirm='',system:${lib.getExe rofi-system},screenshot:${lib.getExe rofi-screenshot}";
       combi-display-format = "{text}&#09;<span font='Normal 14px' alpha='50%'>{mode}</span>";
       drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
       window-format = "{t}";

@@ -42,7 +42,6 @@
         keybindings = {
           "${mod}+q" = "kill";
           "${mod}+space" = "exec --no-startup-id rofi -show combi";
-          "${mod}+Control+p" = "exec --no-startup-id clipmenu";
 
           "XF86AudioPrev" = "exec --no-startup-id playerctl previous";
           "XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ .05-";

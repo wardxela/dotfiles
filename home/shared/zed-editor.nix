@@ -82,6 +82,10 @@
           breadcrumbs = false;
           quick_actions = false;
         };
+        status_bar = {
+          active_language_button = false;
+          cursor_position_button = false;
+        };
         tab_bar.show = false;
         project_panel = {
           inherit dock default_width;
