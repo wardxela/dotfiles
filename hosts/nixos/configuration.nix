@@ -1,4 +1,4 @@
-{ config, ... }:
+{ ... }:
 
 {
   imports = [
@@ -13,19 +13,11 @@
 
   hardware = {
     graphics.enable = true;
-    nvidia = {
-      modesetting.enable = true;
-      nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
-      open = false;
-    };
     bluetooth = {
       enable = true;
       powerOnBoot = true;
     };
   };
-
-  services.xserver.videoDrivers = [ "nvidia" ];
 
   swapDevices = [
     {

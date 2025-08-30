@@ -6,11 +6,12 @@
     ./dunst.nix
     ./easyeffects.nix
     ./gtk.nix
-    ./i3.nix
     ./mpv.nix
     ./obs.nix
     ./packages.nix
     ./rofi.nix
+    ./sway.nix
     ./zathura.nix
   ];
+  services.clipmenu.enable = true;
 }

@@ -13,6 +13,7 @@ in
   stylix.targets.rofi.enable = false;
   programs.rofi = {
     enable = true;
+    package = lib.mkIf config.wayland.windowManager.sway.enable pkgs.rofi-wayland;
     terminal = lib.getExe pkgs.kitty;
     theme = ../../assets/raycast-dark.rasi;
     plugins = with pkgs; [

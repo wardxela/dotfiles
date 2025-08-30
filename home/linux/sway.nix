@@ -1,22 +1,37 @@
-# This module has been replaced in favor of sway.nix. Use it for reference.
 { pkgs, ... }:
 
 {
   home.packages = with pkgs; [
-    xclip
-    xcolor
+    wl-clipboard
   ];
 
-  xsession.windowManager.i3 =
-    let
-      mod = "Mod4";
-      mainDesktop = "DP-0";
-      secondDesktop = "HDMI-1";
-    in
-    {
-      enable = true;
-      config = {
+  wayland.windowManager.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true;
+    config =
+      let
+        mod = "Mod4";
+        mainDesktop = "DP-1";
+        secondDesktop = "HDMI-A-2";
+      in
+      {
         modifier = mod;
+        input = {
+          "*" = {
+            xkb_layout = "us,ru";
+            xkb_options = "grp:caps_toggle";
+            repeat_delay = "225";
+            repeat_rate = "30";
+          };
+        };
+        output = {
+          "${mainDesktop}" = {
+            pos = "0 0";
+          };
+          "${secondDesktop}" = {
+            pos = "1920 0";
+          };
+        };
         window = {
           hideEdgeBorders = "both";
           titlebar = false;
@@ -27,10 +42,10 @@
           border = 0;
           criteria = [
             {
-              class = "^AmneziaVPN$";
+              title = "AmneziaVPN";
             }
             {
-              class = "^pwvucontrol$";
+              app_id = "com.saivert.pwvucontrol";
             }
           ];
         };
@@ -41,14 +56,14 @@
         ];
         keybindings = {
           "${mod}+q" = "kill";
-          "${mod}+space" = "exec --no-startup-id rofi -show combi";
-          "${mod}+Control+p" = "exec --no-startup-id clipmenu";
+          "${mod}+space" = "exec rofi -show combi";
+          "${mod}+Control+p" = "exec clipmenu";
 
-          "XF86AudioPrev" = "exec --no-startup-id playerctl previous";
-          "XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ .05-";
-          "XF86AudioRaiseVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ .05+";
-          "XF86AudioNext" = "exec --no-startup-id playerctl next";
-          "XF86AudioPlay" = "exec --no-startup-id playerctl play-pause";
+          "XF86AudioPrev" = "exec playerctl previous";
+          "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_SINK@ .05-";
+          "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_SINK@ .05+";
+          "XF86AudioNext" = "exec playerctl next";
+          "XF86AudioPlay" = "exec playerctl play-pause";
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";
@@ -124,7 +139,8 @@
           "${mod}+Shift+y" = "move container to workspace y";
           "${mod}+Shift+z" = "move container to workspace z";
 
-          "${mod}+Shift+Tab" = "move workspace to output next";
+          "${mod}+Ctrl+h" = "move workspace to output left";
+          "${mod}+Ctrl+l" = "move workspace to output right";
         };
         workspaceOutputAssign = [
           {
@@ -258,55 +274,48 @@
         ];
         assigns = {
           "number 10" = [ { class = "^Chromium-browser$"; } ];
-          "e" = [ { class = "^dev.zed.Zed$"; } ];
-          "r" = [ { class = "^thunderbird$"; } ];
-          "t" = [ { class = "^AyuGramDesktop$"; } ];
+          "e" = [ { app_id = "dev.zed.Zed"; } ];
+          "r" = [ { app_id = "thunderbird"; } ];
+          "t" = [ { app_id = "com.ayugram.desktop"; } ];
           "s" = [ { class = "^Slack$"; } ];
           "a" = [ { class = "^anytype$"; } ];
           "d" = [ { class = "^discord$"; } ];
-          "f" = [ { class = "^zen$"; } ];
-          "g" = [ { class = "^kitty$"; } ];
-          "c" = [ { class = "^Google-chrome$"; } ];
-          "b" = [ { class = "^Zathura$"; } ];
+          "f" = [ { app_id = "zen-beta"; } ];
+          "g" = [ { app_id = "kitty"; } ];
+          "c" = [ { app_id = "google-chrome"; } ];
+          "b" = [ { app_id = "org.pwmt.zathura"; } ];
         };
         startup = [
           {
             command = "AmneziaVPN";
-            notification = false;
           }
           {
             command = "zeditor -w ~/code/dotfiles";
-            notification = false;
           }
           {
             command = "thunderbird";
-            notification = false;
           }
           {
             command = "AyuGram";
-            notification = false;
           }
           {
             command = "anytype";
-            notification = false;
           }
           {
             command = "slack";
-            notification = false;
           }
           {
             command = "discord";
-            notification = false;
           }
           {
             command = "zen-beta";
-            notification = false;
           }
           {
             command = "kitty";
-            notification = false;
           }
         ];
       };
-    };
+  };
+
+  programs.swaylock.enable = true;
 }

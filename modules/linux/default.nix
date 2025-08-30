@@ -33,5 +33,6 @@
     networkmanager.enable = true;
   };
 
+  security.polkit.enable = true;
   security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
 }
