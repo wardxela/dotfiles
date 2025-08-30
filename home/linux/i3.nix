@@ -1,6 +1,11 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
+  home.packages = with pkgs; [
+    xclip
+    xcolor
+  ];
+
   xsession.windowManager.i3 =
     let
       mod = "Mod4";

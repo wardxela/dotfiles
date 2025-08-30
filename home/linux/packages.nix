@@ -5,8 +5,6 @@
     # GUI
     pwvucontrol
     atlauncher
-    xcolor
-    xclip
     vial
 
     # CLI
