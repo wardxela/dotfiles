@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     wl-clipboard
+    kooha
   ];
 
   wayland.windowManager.sway = {
@@ -316,5 +317,15 @@
 
   services = {
     cliphist.enable = true;
+    flameshot = {
+      enable = true;
+      settings = {
+        General = {
+          disabledTrayIcon = true;
+          showStartupLaunchMessage = false;
+          useGrimAdapter = true;
+        };
+      };
+    };
   };
 }

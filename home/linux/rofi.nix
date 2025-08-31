@@ -6,7 +6,6 @@
 }:
 
 let
-  rofi-screenshot = pkgs.callPackage ./rofi-screenshot.nix { };
   rofi-system = pkgs.callPackage ./rofi-system.nix { };
   rofi-cliphist = pkgs.writeScriptBin "rofi-cliphist" ''
     #!/usr/bin/env bash
@@ -28,7 +27,6 @@ in
       rofi-emoji
       rofi-calc
       rofi-system
-      rofi-screenshot
       rofi-cliphist
     ];
     extraConfig = {
@@ -42,15 +40,13 @@ in
       kb-mode-complete = "Control+i";
       modes = "combi,calc,emoji,cliphist:${lib.getExe rofi-cliphist}";
       matching = "fuzzy";
-      combi-modes = "drun,window,ssh --choices=shutdown/reboot/lockscreen --confirm='',system:${lib.getExe rofi-system},screenshot:${lib.getExe rofi-screenshot}";
+      combi-modes = "drun,window,ssh,system:${lib.getExe rofi-system}";
       combi-display-format = "{text}&#09;<span font='Normal 14px' alpha='50%'>{mode}</span>";
       drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
       window-format = "{t}";
       display-drun = "Application";
       display-ssh = "        SSH";
       display-window = "     Window";
-      # display-system = "     System";
-      # display-screenshot = " Screenshot";
       # TODO: https://github.com/nix-community/home-manager/issues/4783
       "// calc" = config.lib.formats.rasi.mkLiteral ''
 

@@ -33,6 +33,13 @@
     networkmanager.enable = true;
   };
 
+  xdg.portal = {
+    enable = true;
+    configPackages = with pkgs; [
+      xdg-desktop-portal-wlr
+    ];
+  };
+
   security.polkit.enable = true;
   security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
 }

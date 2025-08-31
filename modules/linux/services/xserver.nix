@@ -1,5 +1,5 @@
 # This module has been replaced in favor of wayland.nix. Use it for reference.
-{ pkgs, ... }:
+{ ... }:
 
 {
   services = {
@@ -17,10 +17,4 @@
     displayManager.defaultSession = "none+i3";
   };
   security.pam.services.i3lock.enable = true;
-  xdg.portal = {
-    enable = true;
-    configPackages = with pkgs; [
-      xdg-desktop-portal-gtk
-    ];
-  };
 }

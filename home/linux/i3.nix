@@ -5,6 +5,8 @@
   home.packages = with pkgs; [
     xclip
     xcolor
+    ffcast
+    slop
   ];
 
   xsession.windowManager.i3 =

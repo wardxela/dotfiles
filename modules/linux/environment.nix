@@ -1,8 +1,10 @@
 { ... }:
 
 {
-  environment.variables = {
-    CM_LAUNCHER = "rofi";
-    EDITOR = "nvim";
+  environment = {
+    variables = {
+      CM_LAUNCHER = "rofi";
+      EDITOR = "nvim";
+    };
   };
 }
