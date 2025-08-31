@@ -5,6 +5,8 @@
   makeWrapper,
   coreutils,
   wireplumber,
+  swaylock,
+  systemd,
 }:
 
 stdenv.mkDerivation {
@@ -14,8 +16,8 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "wardxela";
     repo = "rofi-system";
-    rev = "3002b7d3fb70671772a6faaba255724bae02a6e0";
-    hash = "sha256-pG0zWhGcnj95Qy9LejIDV5KYChvAULj+xUR4jjN/CLA=";
+    rev = "a4d4e542ae162857bf47c24ff9f63064cd50f42a";
+    hash = "sha256-EwnojPlY4/L3Nv2pi30fedfmzah9fTf2dtN7uGw2XXI=";
   };
 
   nativeBuildInputs = [ makeWrapper ];
@@ -26,6 +28,8 @@ stdenv.mkDerivation {
         lib.makeBinPath [
           coreutils
           wireplumber
+          swaylock
+          systemd
         ]
       }
   '';

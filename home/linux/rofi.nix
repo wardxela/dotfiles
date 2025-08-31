@@ -27,7 +27,6 @@ in
     plugins = with pkgs; [
       rofi-emoji
       rofi-calc
-      rofi-power-menu
       rofi-system
       rofi-screenshot
       rofi-cliphist
@@ -43,7 +42,7 @@ in
       kb-mode-complete = "Control+i";
       modes = "combi,calc,emoji,cliphist:${lib.getExe rofi-cliphist}";
       matching = "fuzzy";
-      combi-modes = "drun,window,ssh,power-menu:${lib.getExe pkgs.rofi-power-menu} --choices=shutdown/reboot/lockscreen --confirm='',system:${lib.getExe rofi-system},screenshot:${lib.getExe rofi-screenshot}";
+      combi-modes = "drun,window,ssh --choices=shutdown/reboot/lockscreen --confirm='',system:${lib.getExe rofi-system},screenshot:${lib.getExe rofi-screenshot}";
       combi-display-format = "{text}&#09;<span font='Normal 14px' alpha='50%'>{mode}</span>";
       drun-display-format = "{name}    <span weight='normal' alpha='60%'>{generic}</span>";
       window-format = "{t}";
