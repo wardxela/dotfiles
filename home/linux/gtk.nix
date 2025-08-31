@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   home = {
@@ -9,6 +9,10 @@
   };
   gtk = {
     enable = true;
+    iconTheme = {
+      name = "Papirus";
+      package = pkgs.papirus-icon-theme;
+    };
     gtk3 = {
       extraConfig = {
         gtk-decoration-layout = "appmenu:none";
