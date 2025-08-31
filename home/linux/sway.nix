@@ -49,11 +49,7 @@
             }
           ];
         };
-        bars = [
-          {
-            mode = "invisible";
-          }
-        ];
+        bars = [ ];
         keybindings = {
           "${mod}+q" = "kill";
           "${mod}+space" = "exec rofi -show combi";
@@ -318,5 +314,7 @@
 
   programs.swaylock.enable = true;
 
-  services.cliphist.enable = true;
+  services = {
+    cliphist.enable = true;
+  };
 }
