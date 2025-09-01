@@ -7,7 +7,7 @@ in
 {
   home.packages = with pkgs; [
     # GUI
-    ayugram-desktop
+    telegram-desktop
     qbittorrent
     hoppscotch
     discord

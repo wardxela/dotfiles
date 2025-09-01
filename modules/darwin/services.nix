@@ -171,6 +171,7 @@
           run = "move-node-to-workspace N";
         }
         {
+          # TODO: Telegram
           "if".app-id = "one.ayugram.AyuGramDesktop";
           run = "move-node-to-workspace M";
         }

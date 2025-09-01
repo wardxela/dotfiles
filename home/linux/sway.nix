@@ -272,7 +272,7 @@
           "number 10" = [ { class = "^Chromium-browser$"; } ];
           "e" = [ { app_id = "dev.zed.Zed"; } ];
           "r" = [ { app_id = "thunderbird"; } ];
-          "t" = [ { app_id = "com.ayugram.desktop"; } ];
+          "t" = [ { app_id = "org.telegram.desktop"; } ];
           "s" = [ { class = "^Slack$"; } ];
           "a" = [ { class = "^anytype$"; } ];
           "d" = [ { class = "^discord$"; } ];
@@ -292,7 +292,7 @@
             command = "thunderbird";
           }
           {
-            command = "AyuGram";
+            command = "Telegram";
           }
           {
             command = "anytype";
