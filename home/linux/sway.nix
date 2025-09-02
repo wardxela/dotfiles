@@ -51,6 +51,7 @@
           ];
         };
         bars = [ ];
+        bindkeysToCode = true;
         keybindings = {
           "${mod}+q" = "kill";
           "${mod}+space" = "exec rofi -show combi";
@@ -324,6 +325,7 @@
           disabledTrayIcon = true;
           showStartupLaunchMessage = false;
           useGrimAdapter = true;
+          disabledGrimWarning = true;
         };
       };
     };

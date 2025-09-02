@@ -4,9 +4,10 @@
   fetchFromGitHub,
   makeWrapper,
   coreutils,
-  wireplumber,
+  flameshot,
   swaylock,
   systemd,
+  wireplumber,
 }:
 
 stdenv.mkDerivation {
@@ -16,8 +17,8 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "wardxela";
     repo = "rofi-system";
-    rev = "a4d4e542ae162857bf47c24ff9f63064cd50f42a";
-    hash = "sha256-EwnojPlY4/L3Nv2pi30fedfmzah9fTf2dtN7uGw2XXI=";
+    rev = "25d036978942fd6aafd9165a3bdf66ba64f6272d";
+    hash = "sha256-Gc904igcK60WjI/D9mOj2PII/2y13R/upXA0oR98Qag=";
   };
 
   nativeBuildInputs = [ makeWrapper ];
@@ -27,9 +28,10 @@ stdenv.mkDerivation {
       --set PATH ${
         lib.makeBinPath [
           coreutils
-          wireplumber
+          flameshot
           swaylock
           systemd
+          wireplumber
         ]
       }
   '';
