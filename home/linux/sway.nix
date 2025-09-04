@@ -58,8 +58,6 @@
 
           "XF86AudioLowerVolume" = "exec volumectl -u down";
           "XF86AudioRaiseVolume" = "exec volumectl -u up";
-          "XF86MonBrightnessUp" = "exec lightctl up";
-          "XF86MonBrightnessDown" = "exec lightctl down";
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";
