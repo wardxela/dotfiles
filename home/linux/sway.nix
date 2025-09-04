@@ -56,11 +56,10 @@
           "${mod}+q" = "kill";
           "${mod}+space" = "exec rofi -show combi";
 
-          "XF86AudioPrev" = "exec playerctl previous";
-          "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_SINK@ .05-";
-          "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_SINK@ .05+";
-          "XF86AudioNext" = "exec playerctl next";
-          "XF86AudioPlay" = "exec playerctl play-pause";
+          "XF86AudioLowerVolume" = "exec volumectl -u down";
+          "XF86AudioRaiseVolume" = "exec volumectl -u up";
+          "XF86MonBrightnessUp" = "exec lightctl up";
+          "XF86MonBrightnessDown" = "exec lightctl down";
 
           "${mod}+h" = "focus left";
           "${mod}+j" = "focus down";

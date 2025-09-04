@@ -37,6 +37,7 @@
     enable = true;
     configPackages = with pkgs; [
       xdg-desktop-portal-wlr
+      xdg-desktop-portal-shana
     ];
   };
 

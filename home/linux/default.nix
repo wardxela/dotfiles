@@ -3,6 +3,7 @@
 {
   imports = [
     ../shared
+    ./avizo.nix
     ./dunst.nix
     ./easyeffects.nix
     ./gtk.nix
