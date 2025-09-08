@@ -35,10 +35,16 @@
 
   xdg.portal = {
     enable = true;
-    configPackages = with pkgs; [
+    config.sway = {
+      default = [ "gtk" ];
+      "org.freedesktop.impl.portal.Screenshot" = "wlr";
+      "org.freedesktop.impl.portal.ScreenCast" = "wlr";
+    };
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
-      xdg-desktop-portal-shana
     ];
+    xdgOpenUsePortal = true;
   };
 
   security.polkit.enable = true;
