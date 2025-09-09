@@ -161,9 +161,8 @@
           };
         };
         features = {
-          edit_prediction_provider = "supermaven";
+          edit_prediction_provider = "none";
         };
-        edit_predictions.mode = "subtle";
         telemetry = {
           diagnostics = false;
           metrics = false;

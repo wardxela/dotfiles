@@ -3,8 +3,12 @@
 {
   stylix = {
     enable = true;
-    # Good themes: evenok-dark, kanagawa-dragon
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tomorrow-night.yaml";
+    # Good trie themes:
+    # - evenok-dark
+    # - kanagawa-dragon
+    # - tomorrow-night
+    # - ashes
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
     image = ./assets/black.png;
     fonts = with pkgs; {
       serif = {
