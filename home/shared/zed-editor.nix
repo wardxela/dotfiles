@@ -36,6 +36,7 @@
       }
     ];
     extensions = [
+      "astro"
       "codebook"
       "colored-zed-icons-theme"
       "docker-compose"
