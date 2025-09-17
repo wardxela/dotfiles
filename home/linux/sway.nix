@@ -276,7 +276,7 @@
           "d" = [ { class = "^discord$"; } ];
           "f" = [ { app_id = "zen-beta"; } ];
           "g" = [ { app_id = "kitty"; } ];
-          "c" = [ { app_id = "google-chrome"; } ];
+          "c" = [ { app_id = "chromium-browser"; } ];
           "b" = [ { app_id = "org.pwmt.zathura"; } ];
         };
         startup = [
@@ -306,6 +306,9 @@
           }
           {
             command = "kitty";
+          }
+          {
+            command = "chromium";
           }
         ];
       };

@@ -4,6 +4,7 @@
   imports = [
     ../shared
     ./avizo.nix
+    ./chromium.nix
     ./dunst.nix
     ./easyeffects.nix
     ./gtk.nix

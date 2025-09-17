@@ -5,7 +5,6 @@
     ./aichat.nix
     ./bat.nix
     ./btop.nix
-    ./chromium.nix
     ./eza.nix
     ./fastfetch.nix
     ./fd.nix
