@@ -21,7 +21,6 @@ in
     dust
     tabiew
     glow
-    nom
     speedread
     ggh
     cointop
