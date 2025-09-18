@@ -16,6 +16,22 @@
       { id = "ecboojkidbdghfhifefbpdkdollfhicb"; }
       # Return YouTube Dislike
       { id = "gebbhagfogifgggkldgodflihgfeippi"; }
+      # Copy Current URL
+      { id = "okkmnbabeggdmakmnffkoflpdlkmmpcp"; }
+      # Wappalyzer - Technology profiler
+      { id = "gppongmhjkpfnbhagpmjfkannfbllamg"; }
+      # Gopass Bridge
+      { id = "kkhfnlkhiapbiehimabddjbimfaijdhk"; }
+      # AI Grammar Checker & Paraphraser – LanguageTool
+      { id = "oldceeleldhonbafppcapldpdifcinji"; }
+      # Simple Translate
+      { id = "ibplnjkanclpjokhdolnendpplpjiace"; }
+      # unsight
+      { id = "dnkemphgofcdnnfjblcpclofbkeimpnc"; }
+      # Decentraleyes
+      { id = "ldpochfccmkkmhdbclfhpagapcfdljkj"; }
+      # Privacy Badger
+      { id = "pkehgijcmpdhfbdbbnkijodmdjhbjlgp"; }
     ];
   };
 }
