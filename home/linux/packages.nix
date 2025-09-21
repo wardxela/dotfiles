@@ -6,6 +6,9 @@
     pwvucontrol
     atlauncher
     vial
+    gcolor3
+    nemo
+    krita
 
     # CLI
     tesseract

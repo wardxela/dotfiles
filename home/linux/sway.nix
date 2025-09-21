@@ -48,6 +48,12 @@
             {
               app_id = "com.saivert.pwvucontrol";
             }
+            {
+              app_id = "gcolor3";
+            }
+            {
+              app_id = "nemo";
+            }
           ];
         };
         bars = [ ];
