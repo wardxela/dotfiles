@@ -5,7 +5,6 @@
     ../shared
     ./avizo.nix
     ./chromium.nix
-    ./dunst.nix
     ./easyeffects.nix
     ./gtk.nix
     ./mpv.nix
@@ -13,6 +12,7 @@
     ./packages.nix
     ./rofi.nix
     ./sway.nix
+    ./swaync.nix
     ./zathura.nix
   ];
 }
