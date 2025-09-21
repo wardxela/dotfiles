@@ -1,5 +1,8 @@
-{ ... }:
+{ pkgs, ... }:
 
+let
+  tmx-script = ./scripts/tmx.sh |> builtins.readFile |> pkgs.writeShellScriptBin "tmx";
+in
 {
   programs.tmux = {
     enable = true;
@@ -11,4 +14,5 @@
     mouse = true;
     terminal = "screen-256color";
   };
+  home.packages = [ tmx-script ];
 }

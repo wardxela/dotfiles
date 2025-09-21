@@ -1,9 +1,5 @@
 { pkgs, ... }:
 
-let
-  ns-script = pkgs.writeShellScriptBin "ns" (builtins.readFile ./scripts/nixpkgs.sh);
-  tmx-script = pkgs.writeShellScriptBin "tmx" (builtins.readFile ./scripts/tmx.sh);
-in
 {
   home.packages = with pkgs; [
     # GUI
@@ -25,7 +21,6 @@ in
     ggh
     cointop
     ffmpeg
-    nix-search-tv
     nvd
     termusic
     glab
@@ -47,9 +42,5 @@ in
     nil
     vscode-langservers-extracted
     tailwindcss-language-server
-
-    # Scripts
-    ns-script
-    tmx-script
   ];
 }

@@ -15,6 +15,7 @@
     ./gpg.nix
     ./kitty.nix
     ./lazydocker.nix
+    ./nix-search-tv.nix
     ./nix-your-shell.nix
     ./nvf.nix
     ./packages.nix
