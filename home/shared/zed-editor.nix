@@ -32,6 +32,8 @@
           ];
           "space f b" = "tab_switcher::ToggleAll";
           "space t" = "project_panel::ToggleFocus";
+          "space g" = "git_panel::ToggleFocus";
+          "space a" = "agent::ToggleFocus";
         };
       }
     ];
