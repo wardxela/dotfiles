@@ -54,6 +54,9 @@
             {
               app_id = "nemo";
             }
+            {
+              app_id = "com.belmoussaoui.Authenticator";
+            }
           ];
         };
         bars = [ ];

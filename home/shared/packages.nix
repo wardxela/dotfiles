@@ -12,6 +12,7 @@
     # CLI
     inxi
     ncdu
+    duf
     mprocs
     just
     dust
