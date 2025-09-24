@@ -135,45 +135,44 @@
       };
       on-window-detected = [
         {
-          "if".app-id = "app.zen-browser.zen";
-          run = "move-node-to-workspace 1";
+          "if".app-id = "org.chromium.Chromium";
+          run = "move-node-to-workspace 10";
         }
         {
           "if".app-id = "dev.zed.Zed";
-          run = "move-node-to-workspace 2";
+          run = "move-node-to-workspace E";
         }
         {
-          "if".app-id = "net.kovidgoyal.kitty";
-          run = "move-node-to-workspace 3";
+          "if".app-id = "org.nixos.thunderbird";
+          run = "move-node-to-workspace R";
+        }
+        {
+          "if".app-id = "com.tdesktop.Telegram";
+          run = "move-node-to-workspace T";
+        }
+        {
+          "if".app-id = "com.anytype.anytype";
+          run = "move-node-to-workspace A";
+        }
+        {
+          "if".app-id = "com.tinyspeck.slackmacgap";
+          run = "move-node-to-workspace S";
         }
         {
           "if".app-id = "com.hnc.Discord";
           run = "move-node-to-workspace D";
         }
         {
-          "if".app-id = "com.apple.finder";
+          "if".app-id = "app.zen-browser.zen";
           run = "move-node-to-workspace F";
         }
         {
-          "if".app-id = "e.AmneziaVPN";
-          run = "move-node-to-workspace V";
+          "if".app-id = "net.kovidgoyal.kitty";
+          run = "move-node-to-workspace G";
         }
         {
           "if".app-id = "com.apple.iBooksX";
           run = "move-node-to-workspace B";
-        }
-        {
-          "if".app-id = "com.anytype.anytype";
-          run = "move-node-to-workspace N";
-        }
-        {
-          # TODO: Telegram
-          "if".app-id = "one.ayugram.AyuGramDesktop";
-          run = "move-node-to-workspace M";
-        }
-        {
-          "if".app-id = "org.chromium.Chromium";
-          run = "move-node-to-workspace 10";
         }
       ];
     };
