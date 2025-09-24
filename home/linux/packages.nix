@@ -10,6 +10,7 @@
     gcolor3
     nemo
     krita
+    yandex-music
 
     # CLI
     tesseract

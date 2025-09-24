@@ -280,8 +280,8 @@
           "e" = [ { app_id = "dev.zed.Zed"; } ];
           "r" = [ { app_id = "thunderbird"; } ];
           "t" = [ { app_id = "org.telegram.desktop"; } ];
-          "s" = [ { class = "^Slack$"; } ];
           "a" = [ { class = "^anytype$"; } ];
+          "s" = [ { class = "^Slack$"; } ];
           "d" = [ { class = "^discord$"; } ];
           "f" = [ { app_id = "zen-beta"; } ];
           "g" = [ { app_id = "kitty"; } ];
