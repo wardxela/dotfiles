@@ -32,6 +32,8 @@
       { id = "ldpochfccmkkmhdbclfhpagapcfdljkj"; }
       # Privacy Badger
       { id = "pkehgijcmpdhfbdbbnkijodmdjhbjlgp"; }
+      # Audio Compressor
+      { id = "daomidlfpcfjchpalpjogmnhabkekbnn"; }
     ];
   };
 }
