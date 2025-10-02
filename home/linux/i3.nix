@@ -276,7 +276,7 @@
             notification = false;
           }
           {
-            command = "zeditor -w ~/code/dotfiles";
+            command = "zeditor";
             notification = false;
           }
           {

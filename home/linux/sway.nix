@@ -293,7 +293,7 @@
             command = "AmneziaVPN";
           }
           {
-            command = "zeditor -w ~/code/dotfiles";
+            command = "zeditor";
           }
           {
             command = "thunderbird";

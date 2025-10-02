@@ -166,6 +166,7 @@
         features = {
           edit_prediction_provider = "none";
         };
+        restore_on_startup = "none";
         telemetry = {
           diagnostics = false;
           metrics = false;
