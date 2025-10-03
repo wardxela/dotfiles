@@ -4,11 +4,17 @@
   imports = [ ./stylix.nix ];
 
   nix = {
-    settings.experimental-features = [
-      "nix-command"
-      "flakes"
-      "pipe-operators"
-    ];
+    settings = {
+      trusted-users = [
+        "root"
+        "wardxela"
+      ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+        "pipe-operators"
+      ];
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
