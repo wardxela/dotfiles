@@ -21,7 +21,6 @@
     shell = pkgs.fish;
   };
 
-  virtualisation.waydroid.enable = true;
   virtualisation.docker = {
     rootless = {
       enable = true;

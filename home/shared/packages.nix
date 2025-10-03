@@ -36,6 +36,7 @@
     gopass-jsonapi
 
     # Development Tools
+    devenv
     gcc
     nodejs
     nixfmt
