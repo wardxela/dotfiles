@@ -37,12 +37,7 @@
 
     # Development Tools
     devenv
-    gcc
-    nodejs
     nixfmt
-    tree-sitter
     nil
-    vscode-langservers-extracted
-    tailwindcss-language-server
   ];
 }
