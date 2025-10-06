@@ -20,7 +20,6 @@
     glow
     speedread
     ggh
-    cointop
     ffmpeg
     nvd
     termusic
