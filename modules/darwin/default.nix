@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, pkgs, ... }:
 
 {
   imports = [
@@ -12,4 +12,8 @@
     name = "wardxela";
     home = "/Users/wardxela";
   };
+
+  programs.bash.interactiveShellInit = lib.mkBefore ''
+    source ${pkgs.blesh}/share/blesh/ble.sh
+  '';
 }
