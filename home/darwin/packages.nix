@@ -8,9 +8,10 @@
     monitorcontrol
     iina
     keka
+    keycastr
 
     # Development Tools
-    colima
+    colima # TODO: replace on container - https://github.com/apple/container/issues/66
     docker
   ];
 }
