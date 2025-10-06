@@ -3,6 +3,11 @@
 {
   programs.bash = {
     enable = true;
+    bashrcExtra = ''
+      if [ -z "$TMUX" ] && [ "$TERM" = "xterm-kitty" ]; then
+        tmx
+      fi
+    '';
     shellAliases = {
       zed = "zeditor";
     };
