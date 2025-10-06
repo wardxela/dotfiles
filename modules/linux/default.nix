@@ -18,7 +18,6 @@
       "wheel"
       "adbusers"
     ];
-    shell = pkgs.fish;
   };
 
   virtualisation.docker = {

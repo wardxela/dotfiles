@@ -3,12 +3,12 @@
 {
   imports = [
     ./aichat.nix
+    ./bash.nix
     ./bat.nix
     ./btop.nix
     ./eza.nix
     ./fastfetch.nix
     ./fd.nix
-    ./fish.nix
     ./fzf.nix
     ./git.nix
     ./gitui.nix
@@ -17,6 +17,7 @@
     ./lazydocker.nix
     ./nix-search-tv.nix
     ./nvf.nix
+    ./oh-my-posh.nix
     ./packages.nix
     ./ripgrep.nix
     ./television.nix
@@ -30,7 +31,6 @@
   ];
 
   home.stateVersion = "25.05";
-  home.shell.enableFishIntegration = true;
 
   programs.home-manager.enable = true;
 }

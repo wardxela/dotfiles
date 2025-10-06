@@ -45,7 +45,6 @@
       "dockerfile"
       "emmet"
       "env"
-      "fish"
       "git-firefly"
       "github-theme"
       "html"

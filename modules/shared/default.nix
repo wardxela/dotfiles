@@ -24,6 +24,4 @@
   home-manager.extraSpecialArgs = { inherit inputs; };
 
   time.timeZone = "Europe/Moscow";
-
-  programs.fish.enable = true;
 }
