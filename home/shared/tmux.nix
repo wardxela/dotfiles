@@ -12,7 +12,7 @@ in
     historyLimit = 5000;
     keyMode = "vi";
     mouse = true;
-    terminal = "screen-256color";
+    terminal = "tmux-256color";
   };
   home.packages = [ tmx-script ];
 }
