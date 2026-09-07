@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 let
   wasmPkgs = pkgs.pkgsCross.wasm32-wasip1;
@@ -44,10 +44,12 @@ in
                 _children = [
                   {
                     LaunchOrFocusPlugin = {
-                      _args = [ "room" ];
+                      # TODO: https://github.com/zellij-org/zellij/issues/3409
+                      # _args = [ "room" ];
+                      _args = [ "file:${config.xdg.configHome}/zellij/plugins/room.wasm" ];
                       _children = [
                         {
-                          floating = true;
+                          in_place = true;
                           ignore_case = true;
                         }
                       ];
