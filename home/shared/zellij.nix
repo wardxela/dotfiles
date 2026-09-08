@@ -86,21 +86,21 @@ in
         {
           tab = {
             _props = {
-              name = "Project";
+              name = "Workspace";
             };
           };
         }
         {
           tab = {
             _props = {
-              name = "Editor";
+              name = "Helix Editor";
             };
           };
         }
         {
           tab = {
             _props = {
-              name = "AI Agent";
+              name = "AI Agent (pi)";
             };
           };
         }
@@ -114,21 +114,35 @@ in
         {
           tab = {
             _props = {
-              name = "1st Shell";
+              name = "Remote Server 2";
             };
           };
         }
         {
           tab = {
             _props = {
-              name = "2nd Shell";
+              name = "Remote Server 3";
             };
           };
         }
         {
           tab = {
             _props = {
-              name = "3rd Shell";
+              name = "Shell";
+            };
+          };
+        }
+        {
+          tab = {
+            _props = {
+              name = "Shell 2";
+            };
+          };
+        }
+        {
+          tab = {
+            _props = {
+              name = "Shell 3";
             };
           };
         }
