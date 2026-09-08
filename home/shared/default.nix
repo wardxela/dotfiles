@@ -5,6 +5,7 @@
     ./asciinema.nix
     ./bat.nix
     ./btop.nix
+    ./delta.nix
     ./direnv.nix
     ./eza.nix
     ./fastfetch.nix
