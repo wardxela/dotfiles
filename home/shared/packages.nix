@@ -5,6 +5,7 @@
     # GUI
     qbittorrent
     hoppscotch
+    feishin
 
     # CLI
     inxi
